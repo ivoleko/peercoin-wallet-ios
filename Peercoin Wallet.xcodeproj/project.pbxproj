@@ -46,6 +46,7 @@
 		D7DF54E4201B59A300701D55 /* Peercoin WalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Peercoin WalletUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7DF54E8201B59A300701D55 /* Peercoin_WalletUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Peercoin_WalletUITests.m; sourceTree = "<group>"; };
 		D7DF54EA201B59A300701D55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7DF54F6201B6F6E00701D55 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +97,7 @@
 		D7DF54C3201B59A200701D55 /* Peercoin Wallet */ = {
 			isa = PBXGroup;
 			children = (
+				D7DF54F6201B6F6E00701D55 /* Constants.h */,
 				D7DF54C4201B59A200701D55 /* AppDelegate.h */,
 				D7DF54C5201B59A200701D55 /* AppDelegate.m */,
 				D7DF54CD201B59A200701D55 /* Assets.xcassets */,
