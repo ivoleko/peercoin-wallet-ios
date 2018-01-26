@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D7DF54C6201B59A200701D55 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF54C5201B59A200701D55 /* AppDelegate.m */; };
+		D7DF54CE201B59A200701D55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7DF54CD201B59A200701D55 /* Assets.xcassets */; };
+		D7DF54D1201B59A200701D55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DF54CF201B59A200701D55 /* LaunchScreen.storyboard */; };
+		D7DF54D4201B59A200701D55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF54D3201B59A200701D55 /* main.m */; };
+		D7DF54DE201B59A300701D55 /* Peercoin_WalletTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF54DD201B59A300701D55 /* Peercoin_WalletTests.m */; };
+		D7DF54E9201B59A300701D55 /* Peercoin_WalletUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF54E8201B59A300701D55 /* Peercoin_WalletUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D7DF54DA201B59A300701D55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7DF54B9201B59A200701D55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7DF54C0201B59A200701D55;
+			remoteInfo = "Peercoin Wallet";
+		};
+		D7DF54E5201B59A300701D55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7DF54B9201B59A200701D55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7DF54C0201B59A200701D55;
+			remoteInfo = "Peercoin Wallet";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D7DF54C1201B59A200701D55 /* Peercoin Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Peercoin Wallet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7DF54C4201B59A200701D55 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D7DF54C5201B59A200701D55 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D7DF54CD201B59A200701D55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D7DF54D0201B59A200701D55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D7DF54D2201B59A200701D55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7DF54D3201B59A200701D55 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D7DF54D9201B59A300701D55 /* Peercoin WalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Peercoin WalletTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7DF54DD201B59A300701D55 /* Peercoin_WalletTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Peercoin_WalletTests.m; sourceTree = "<group>"; };
+		D7DF54DF201B59A300701D55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7DF54E4201B59A300701D55 /* Peercoin WalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Peercoin WalletUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7DF54E8201B59A300701D55 /* Peercoin_WalletUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Peercoin_WalletUITests.m; sourceTree = "<group>"; };
+		D7DF54EA201B59A300701D55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7DF54BE201B59A200701D55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7DF54D6201B59A300701D55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7DF54E1201B59A300701D55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D7DF54B8201B59A200701D55 = {
+			isa = PBXGroup;
+			children = (
+				D7DF54C3201B59A200701D55 /* Peercoin Wallet */,
+				D7DF54DC201B59A300701D55 /* Peercoin WalletTests */,
+				D7DF54E7201B59A300701D55 /* Peercoin WalletUITests */,
+				D7DF54C2201B59A200701D55 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D7DF54C2201B59A200701D55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7DF54C1201B59A200701D55 /* Peercoin Wallet.app */,
+				D7DF54D9201B59A300701D55 /* Peercoin WalletTests.xctest */,
+				D7DF54E4201B59A300701D55 /* Peercoin WalletUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7DF54C3201B59A200701D55 /* Peercoin Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				D7DF54C4201B59A200701D55 /* AppDelegate.h */,
+				D7DF54C5201B59A200701D55 /* AppDelegate.m */,
+				D7DF54CD201B59A200701D55 /* Assets.xcassets */,
+				D7DF54CF201B59A200701D55 /* LaunchScreen.storyboard */,
+				D7DF54D2201B59A200701D55 /* Info.plist */,
+				D7DF54D3201B59A200701D55 /* main.m */,
+			);
+			path = "Peercoin Wallet";
+			sourceTree = "<group>";
+		};
+		D7DF54DC201B59A300701D55 /* Peercoin WalletTests */ = {
+			isa = PBXGroup;
+			children = (
+				D7DF54DD201B59A300701D55 /* Peercoin_WalletTests.m */,
+				D7DF54DF201B59A300701D55 /* Info.plist */,
+			);
+			path = "Peercoin WalletTests";
+			sourceTree = "<group>";
+		};
+		D7DF54E7201B59A300701D55 /* Peercoin WalletUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D7DF54E8201B59A300701D55 /* Peercoin_WalletUITests.m */,
+				D7DF54EA201B59A300701D55 /* Info.plist */,
+			);
+			path = "Peercoin WalletUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7DF54C0201B59A200701D55 /* Peercoin Wallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7DF54ED201B59A300701D55 /* Build configuration list for PBXNativeTarget "Peercoin Wallet" */;
+			buildPhases = (
+				D7DF54BD201B59A200701D55 /* Sources */,
+				D7DF54BE201B59A200701D55 /* Frameworks */,
+				D7DF54BF201B59A200701D55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Peercoin Wallet";
+			productName = "Peercoin Wallet";
+			productReference = D7DF54C1201B59A200701D55 /* Peercoin Wallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D7DF54D8201B59A300701D55 /* Peercoin WalletTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7DF54F0201B59A300701D55 /* Build configuration list for PBXNativeTarget "Peercoin WalletTests" */;
+			buildPhases = (
+				D7DF54D5201B59A300701D55 /* Sources */,
+				D7DF54D6201B59A300701D55 /* Frameworks */,
+				D7DF54D7201B59A300701D55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7DF54DB201B59A300701D55 /* PBXTargetDependency */,
+			);
+			name = "Peercoin WalletTests";
+			productName = "Peercoin WalletTests";
+			productReference = D7DF54D9201B59A300701D55 /* Peercoin WalletTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D7DF54E3201B59A300701D55 /* Peercoin WalletUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7DF54F3201B59A300701D55 /* Build configuration list for PBXNativeTarget "Peercoin WalletUITests" */;
+			buildPhases = (
+				D7DF54E0201B59A300701D55 /* Sources */,
+				D7DF54E1201B59A300701D55 /* Frameworks */,
+				D7DF54E2201B59A300701D55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7DF54E6201B59A300701D55 /* PBXTargetDependency */,
+			);
+			name = "Peercoin WalletUITests";
+			productName = "Peercoin WalletUITests";
+			productReference = D7DF54E4201B59A300701D55 /* Peercoin WalletUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7DF54B9201B59A200701D55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Ivo Leko";
+				TargetAttributes = {
+					D7DF54C0201B59A200701D55 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+					};
+					D7DF54D8201B59A300701D55 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D7DF54C0201B59A200701D55;
+					};
+					D7DF54E3201B59A300701D55 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D7DF54C0201B59A200701D55;
+					};
+				};
+			};
+			buildConfigurationList = D7DF54BC201B59A200701D55 /* Build configuration list for PBXProject "Peercoin Wallet" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D7DF54B8201B59A200701D55;
+			productRefGroup = D7DF54C2201B59A200701D55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7DF54C0201B59A200701D55 /* Peercoin Wallet */,
+				D7DF54D8201B59A300701D55 /* Peercoin WalletTests */,
+				D7DF54E3201B59A300701D55 /* Peercoin WalletUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7DF54BF201B59A200701D55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7DF54D1201B59A200701D55 /* LaunchScreen.storyboard in Resources */,
+				D7DF54CE201B59A200701D55 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7DF54D7201B59A300701D55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7DF54E2201B59A300701D55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7DF54BD201B59A200701D55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7DF54D4201B59A200701D55 /* main.m in Sources */,
+				D7DF54C6201B59A200701D55 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7DF54D5201B59A300701D55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7DF54DE201B59A300701D55 /* Peercoin_WalletTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7DF54E0201B59A300701D55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7DF54E9201B59A300701D55 /* Peercoin_WalletUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D7DF54DB201B59A300701D55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7DF54C0201B59A200701D55 /* Peercoin Wallet */;
+			targetProxy = D7DF54DA201B59A300701D55 /* PBXContainerItemProxy */;
+		};
+		D7DF54E6201B59A300701D55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7DF54C0201B59A200701D55 /* Peercoin Wallet */;
+			targetProxy = D7DF54E5201B59A300701D55 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D7DF54CF201B59A200701D55 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7DF54D0201B59A200701D55 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D7DF54EB201B59A300701D55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D7DF54EC201B59A300701D55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7DF54EE201B59A300701D55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Peercoin Wallet/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ivoleko.Peercoin-Wallet";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D7DF54EF201B59A300701D55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Peercoin Wallet/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ivoleko.Peercoin-Wallet";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D7DF54F1201B59A300701D55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A4JNS6S3ZD;
+				INFOPLIST_FILE = "Peercoin WalletTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ivoleko.Peercoin-WalletTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Peercoin Wallet.app/Peercoin Wallet";
+			};
+			name = Debug;
+		};
+		D7DF54F2201B59A300701D55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A4JNS6S3ZD;
+				INFOPLIST_FILE = "Peercoin WalletTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ivoleko.Peercoin-WalletTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Peercoin Wallet.app/Peercoin Wallet";
+			};
+			name = Release;
+		};
+		D7DF54F4201B59A300701D55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A4JNS6S3ZD;
+				INFOPLIST_FILE = "Peercoin WalletUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ivoleko.Peercoin-WalletUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Peercoin Wallet";
+			};
+			name = Debug;
+		};
+		D7DF54F5201B59A300701D55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A4JNS6S3ZD;
+				INFOPLIST_FILE = "Peercoin WalletUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ivoleko.Peercoin-WalletUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Peercoin Wallet";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7DF54BC201B59A200701D55 /* Build configuration list for PBXProject "Peercoin Wallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7DF54EB201B59A300701D55 /* Debug */,
+				D7DF54EC201B59A300701D55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7DF54ED201B59A300701D55 /* Build configuration list for PBXNativeTarget "Peercoin Wallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7DF54EE201B59A300701D55 /* Debug */,
+				D7DF54EF201B59A300701D55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7DF54F0201B59A300701D55 /* Build configuration list for PBXNativeTarget "Peercoin WalletTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7DF54F1201B59A300701D55 /* Debug */,
+				D7DF54F2201B59A300701D55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7DF54F3201B59A300701D55 /* Build configuration list for PBXNativeTarget "Peercoin WalletUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7DF54F4201B59A300701D55 /* Debug */,
+				D7DF54F5201B59A300701D55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7DF54B9201B59A200701D55 /* Project object */;
+}
