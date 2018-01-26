@@ -1,0 +1,5 @@
+#requires latest version of AFNetworking
+github "AFNetworking/AFNetworking"
+
+#requires latest version of PureLayout
+github "PureLayout/PureLayout"
