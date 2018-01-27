@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		D7DF54C6201B59A200701D55 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF54C5201B59A200701D55 /* AppDelegate.m */; };
 		D7DF54CE201B59A200701D55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7DF54CD201B59A200701D55 /* Assets.xcassets */; };
-		D7DF54D1201B59A200701D55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DF54CF201B59A200701D55 /* LaunchScreen.storyboard */; };
 		D7DF54D4201B59A200701D55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF54D3201B59A200701D55 /* main.m */; };
 		D7DF54DE201B59A300701D55 /* Peercoin_WalletTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF54DD201B59A300701D55 /* Peercoin_WalletTests.m */; };
 		D7DF54E9201B59A300701D55 /* Peercoin_WalletUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF54E8201B59A300701D55 /* Peercoin_WalletUITests.m */; };
@@ -19,6 +18,21 @@
 		D7DF5500201B79BE00701D55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7DF54FF201B79BE00701D55 /* Foundation.framework */; };
 		D7DF5505201B7B5200701D55 /* PPCWebSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF5504201B7B5200701D55 /* PPCWebSessionManager.m */; };
 		D7DF5508201B7C8900701D55 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF5506201B7C8900701D55 /* Reachability.m */; };
+		D7DF550F201BA3BF00701D55 /* PPCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF550E201BA3BF00701D55 /* PPCViewController.m */; };
+		D7DF5512201BA3DB00701D55 /* PPCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF5511201BA3DB00701D55 /* PPCNavigationController.m */; };
+		D7DF5517201BA58300701D55 /* PPCRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF5515201BA58300701D55 /* PPCRootViewController.m */; };
+		D7DF5518201BA58300701D55 /* PPCRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7DF5516201BA58300701D55 /* PPCRootViewController.xib */; };
+		D7DF551C201BA68500701D55 /* ILContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF551B201BA68500701D55 /* ILContainerView.m */; };
+		D7DF5521201BA99A00701D55 /* PPCIntroView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF5520201BA99A00701D55 /* PPCIntroView.m */; };
+		D7DF5523201BA9AD00701D55 /* PPCIntroView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7DF5522201BA9AD00701D55 /* PPCIntroView.xib */; };
+		D7DF5529201BCF3C00701D55 /* PPCPINView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF5528201BCF3C00701D55 /* PPCPINView.m */; };
+		D7DF552B201BCF4E00701D55 /* PPCPINView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7DF552A201BCF4E00701D55 /* PPCPINView.xib */; };
+		D7DF5530201C809700701D55 /* PPCFirstLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF552E201C809700701D55 /* PPCFirstLaunchViewController.m */; };
+		D7DF5531201C809700701D55 /* PPCFirstLaunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7DF552F201C809700701D55 /* PPCFirstLaunchViewController.xib */; };
+		D7DF5535201C80F100701D55 /* PPCRoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF5534201C80F100701D55 /* PPCRoundButton.m */; };
+		D7DF5563201C820C00701D55 /* UIView+ILcategory.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF5548201C820C00701D55 /* UIView+ILcategory.m */; };
+		D7DF5570201C90E700701D55 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7DF5572201C90E700701D55 /* Localizable.strings */; };
+		D7DF5575201C91CC00701D55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DF5573201C91CC00701D55 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +57,6 @@
 		D7DF54C4201B59A200701D55 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D7DF54C5201B59A200701D55 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D7DF54CD201B59A200701D55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D7DF54D0201B59A200701D55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7DF54D2201B59A200701D55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7DF54D3201B59A200701D55 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D7DF54D9201B59A300701D55 /* Peercoin WalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Peercoin WalletTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +75,31 @@
 		D7DF5504201B7B5200701D55 /* PPCWebSessionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCWebSessionManager.m; sourceTree = "<group>"; };
 		D7DF5506201B7C8900701D55 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		D7DF5507201B7C8900701D55 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		D7DF550D201BA3BF00701D55 /* PPCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCViewController.h; sourceTree = "<group>"; };
+		D7DF550E201BA3BF00701D55 /* PPCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCViewController.m; sourceTree = "<group>"; };
+		D7DF5510201BA3DB00701D55 /* PPCNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCNavigationController.h; sourceTree = "<group>"; };
+		D7DF5511201BA3DB00701D55 /* PPCNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCNavigationController.m; sourceTree = "<group>"; };
+		D7DF5514201BA58300701D55 /* PPCRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCRootViewController.h; sourceTree = "<group>"; };
+		D7DF5515201BA58300701D55 /* PPCRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCRootViewController.m; sourceTree = "<group>"; };
+		D7DF5516201BA58300701D55 /* PPCRootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PPCRootViewController.xib; sourceTree = "<group>"; };
+		D7DF551A201BA68400701D55 /* ILContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILContainerView.h; sourceTree = "<group>"; };
+		D7DF551B201BA68500701D55 /* ILContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILContainerView.m; sourceTree = "<group>"; };
+		D7DF551F201BA99A00701D55 /* PPCIntroView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCIntroView.h; sourceTree = "<group>"; };
+		D7DF5520201BA99A00701D55 /* PPCIntroView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCIntroView.m; sourceTree = "<group>"; };
+		D7DF5522201BA9AD00701D55 /* PPCIntroView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PPCIntroView.xib; sourceTree = "<group>"; };
+		D7DF5527201BCF3C00701D55 /* PPCPINView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCPINView.h; sourceTree = "<group>"; };
+		D7DF5528201BCF3C00701D55 /* PPCPINView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCPINView.m; sourceTree = "<group>"; };
+		D7DF552A201BCF4E00701D55 /* PPCPINView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PPCPINView.xib; sourceTree = "<group>"; };
+		D7DF552D201C809700701D55 /* PPCFirstLaunchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCFirstLaunchViewController.h; sourceTree = "<group>"; };
+		D7DF552E201C809700701D55 /* PPCFirstLaunchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCFirstLaunchViewController.m; sourceTree = "<group>"; };
+		D7DF552F201C809700701D55 /* PPCFirstLaunchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PPCFirstLaunchViewController.xib; sourceTree = "<group>"; };
+		D7DF5533201C80F100701D55 /* PPCRoundButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCRoundButton.h; sourceTree = "<group>"; };
+		D7DF5534201C80F100701D55 /* PPCRoundButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCRoundButton.m; sourceTree = "<group>"; };
+		D7DF5547201C820C00701D55 /* UIView+ILcategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ILcategory.h"; sourceTree = "<group>"; };
+		D7DF5548201C820C00701D55 /* UIView+ILcategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ILcategory.m"; sourceTree = "<group>"; };
+		D7DF5574201C91CC00701D55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Peercoin Wallet/Base.lproj/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
+		D7DF5576201C91DD00701D55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D7DF5577201C951B00701D55 /* BlocksAndProtocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlocksAndProtocols.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,12 +156,15 @@
 			isa = PBXGroup;
 			children = (
 				D7DF54F6201B6F6E00701D55 /* Constants.h */,
+				D7DF5577201C951B00701D55 /* BlocksAndProtocols.h */,
 				D7DF54F7201B767D00701D55 /* PrefixHeader.pch */,
 				D7DF54C4201B59A200701D55 /* AppDelegate.h */,
 				D7DF54C5201B59A200701D55 /* AppDelegate.m */,
+				D7DF5509201BA35100701D55 /* UI */,
+				D7DF550A201BA38200701D55 /* Managers and singletons */,
+				D7DF5536201C816A00701D55 /* IL categories */,
+				D7DF556D201C90B300701D55 /* Supporting files */,
 				D7DF54CD201B59A200701D55 /* Assets.xcassets */,
-				D7DF5502201B7B0700701D55 /* Web Session Manager */,
-				D7DF54CF201B59A200701D55 /* LaunchScreen.storyboard */,
 				D7DF54D2201B59A200701D55 /* Info.plist */,
 				D7DF54D3201B59A200701D55 /* main.m */,
 			);
@@ -168,6 +209,147 @@
 				D7DF5504201B7B5200701D55 /* PPCWebSessionManager.m */,
 			);
 			path = "Web Session Manager";
+			sourceTree = "<group>";
+		};
+		D7DF5509201BA35100701D55 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D7DF550C201BA3A700701D55 /* Abstract */,
+				D7DF551D201BA94B00701D55 /* Views and UI elements */,
+				D7DF5519201BA63F00701D55 /* Container view */,
+				D7DF5513201BA56500701D55 /* Root */,
+				D7DF5524201BAACA00701D55 /* Screens */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D7DF550A201BA38200701D55 /* Managers and singletons */ = {
+			isa = PBXGroup;
+			children = (
+				D7DF5502201B7B0700701D55 /* Web Session Manager */,
+			);
+			path = "Managers and singletons";
+			sourceTree = "<group>";
+		};
+		D7DF550C201BA3A700701D55 /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				D7DF550D201BA3BF00701D55 /* PPCViewController.h */,
+				D7DF550E201BA3BF00701D55 /* PPCViewController.m */,
+				D7DF5510201BA3DB00701D55 /* PPCNavigationController.h */,
+				D7DF5511201BA3DB00701D55 /* PPCNavigationController.m */,
+			);
+			path = Abstract;
+			sourceTree = "<group>";
+		};
+		D7DF5513201BA56500701D55 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				D7DF5514201BA58300701D55 /* PPCRootViewController.h */,
+				D7DF5515201BA58300701D55 /* PPCRootViewController.m */,
+				D7DF5516201BA58300701D55 /* PPCRootViewController.xib */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		D7DF5519201BA63F00701D55 /* Container view */ = {
+			isa = PBXGroup;
+			children = (
+				D7DF551A201BA68400701D55 /* ILContainerView.h */,
+				D7DF551B201BA68500701D55 /* ILContainerView.m */,
+			);
+			path = "Container view";
+			sourceTree = "<group>";
+		};
+		D7DF551D201BA94B00701D55 /* Views and UI elements */ = {
+			isa = PBXGroup;
+			children = (
+				D7DF5532201C80D200701D55 /* Round Button */,
+				D7DF5526201BCEEE00701D55 /* PIN view */,
+				D7DF551E201BA95E00701D55 /* Intro View */,
+			);
+			path = "Views and UI elements";
+			sourceTree = "<group>";
+		};
+		D7DF551E201BA95E00701D55 /* Intro View */ = {
+			isa = PBXGroup;
+			children = (
+				D7DF551F201BA99A00701D55 /* PPCIntroView.h */,
+				D7DF5520201BA99A00701D55 /* PPCIntroView.m */,
+				D7DF5522201BA9AD00701D55 /* PPCIntroView.xib */,
+			);
+			path = "Intro View";
+			sourceTree = "<group>";
+		};
+		D7DF5524201BAACA00701D55 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				D7DF552C201C7F2500701D55 /* First Launch */,
+				D7DF5525201BAAE600701D55 /* Create new wallet */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		D7DF5525201BAAE600701D55 /* Create new wallet */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Create new wallet";
+			sourceTree = "<group>";
+		};
+		D7DF5526201BCEEE00701D55 /* PIN view */ = {
+			isa = PBXGroup;
+			children = (
+				D7DF5527201BCF3C00701D55 /* PPCPINView.h */,
+				D7DF5528201BCF3C00701D55 /* PPCPINView.m */,
+				D7DF552A201BCF4E00701D55 /* PPCPINView.xib */,
+			);
+			path = "PIN view";
+			sourceTree = "<group>";
+		};
+		D7DF552C201C7F2500701D55 /* First Launch */ = {
+			isa = PBXGroup;
+			children = (
+				D7DF552D201C809700701D55 /* PPCFirstLaunchViewController.h */,
+				D7DF552E201C809700701D55 /* PPCFirstLaunchViewController.m */,
+				D7DF552F201C809700701D55 /* PPCFirstLaunchViewController.xib */,
+			);
+			path = "First Launch";
+			sourceTree = "<group>";
+		};
+		D7DF5532201C80D200701D55 /* Round Button */ = {
+			isa = PBXGroup;
+			children = (
+				D7DF5533201C80F100701D55 /* PPCRoundButton.h */,
+				D7DF5534201C80F100701D55 /* PPCRoundButton.m */,
+			);
+			path = "Round Button";
+			sourceTree = "<group>";
+		};
+		D7DF5536201C816A00701D55 /* IL categories */ = {
+			isa = PBXGroup;
+			children = (
+				D7DF5546201C820C00701D55 /* UIView */,
+			);
+			path = "IL categories";
+			sourceTree = "<group>";
+		};
+		D7DF5546201C820C00701D55 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				D7DF5547201C820C00701D55 /* UIView+ILcategory.h */,
+				D7DF5548201C820C00701D55 /* UIView+ILcategory.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		D7DF556D201C90B300701D55 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				D7DF5573201C91CC00701D55 /* LaunchScreen.storyboard */,
+				D7DF5572201C90E700701D55 /* Localizable.strings */,
+			);
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,8 +459,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7DF54D1201B59A200701D55 /* LaunchScreen.storyboard in Resources */,
+				D7DF552B201BCF4E00701D55 /* PPCPINView.xib in Resources */,
+				D7DF5570201C90E700701D55 /* Localizable.strings in Resources */,
+				D7DF5518201BA58300701D55 /* PPCRootViewController.xib in Resources */,
 				D7DF54CE201B59A200701D55 /* Assets.xcassets in Resources */,
+				D7DF5575201C91CC00701D55 /* LaunchScreen.storyboard in Resources */,
+				D7DF5531201C809700701D55 /* PPCFirstLaunchViewController.xib in Resources */,
+				D7DF5523201BA9AD00701D55 /* PPCIntroView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,10 +510,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7DF5563201C820C00701D55 /* UIView+ILcategory.m in Sources */,
 				D7DF5505201B7B5200701D55 /* PPCWebSessionManager.m in Sources */,
+				D7DF5530201C809700701D55 /* PPCFirstLaunchViewController.m in Sources */,
+				D7DF5535201C80F100701D55 /* PPCRoundButton.m in Sources */,
+				D7DF5512201BA3DB00701D55 /* PPCNavigationController.m in Sources */,
+				D7DF5529201BCF3C00701D55 /* PPCPINView.m in Sources */,
 				D7DF54D4201B59A200701D55 /* main.m in Sources */,
 				D7DF5508201B7C8900701D55 /* Reachability.m in Sources */,
+				D7DF5517201BA58300701D55 /* PPCRootViewController.m in Sources */,
 				D7DF54C6201B59A200701D55 /* AppDelegate.m in Sources */,
+				D7DF550F201BA3BF00701D55 /* PPCViewController.m in Sources */,
+				D7DF551C201BA68500701D55 /* ILContainerView.m in Sources */,
+				D7DF5521201BA99A00701D55 /* PPCIntroView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,10 +558,18 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D7DF54CF201B59A200701D55 /* LaunchScreen.storyboard */ = {
+		D7DF5572201C90E700701D55 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D7DF54D0201B59A200701D55 /* Base */,
+				D7DF5576201C91DD00701D55 /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		D7DF5573201C91CC00701D55 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7DF5574201C91CC00701D55 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

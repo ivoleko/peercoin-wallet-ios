@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "PPCRootViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +18,23 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [self setDefaultAppearance];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    PPCRootViewController *root = [[PPCRootViewController alloc] initWithXIB];
+    self.window.rootViewController = root;
+    [self.window makeKeyAndVisible];
+    
     return YES;
+}
+
+- (void) setDefaultAppearance {
+    
+    [[UINavigationBar appearance] setBarStyle:UIBarStyleBlack];
+    [[UINavigationBar appearance] setTranslucent:NO];
+    [[UINavigationBar appearance] setTintColor:kPPCColor_green];
+    [[UINavigationBar appearance] setBarTintColor:kPPCColor_dark];
 }
 
 

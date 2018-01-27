@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  Peercoin Wallet
+
+  Created by Ivo Leko on 27/01/2018.
+  Copyright © 2018 Ivo Leko. All rights reserved.
+*/
+
+
+
+
+//Buttons
+"Button.createWallet" = "Create New Wallet";
+"Button.recoverWallet" = "Recover Old Wallet";
+

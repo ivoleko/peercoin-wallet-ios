@@ -9,8 +9,17 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
-#include "Constants.h"
-#include "PPCWebSessionManager.h"
-#include <PureLayout/PureLayout.h>
+#import "Constants.h"
+#import "BlocksAndProtocols.h"
+#import "ILContainerView.h"
+#import "PPCWebSessionManager.h"
+#import "PPCViewController.h"
+#import "PPCNavigationController.h"
+#import <PureLayout/PureLayout.h>
+
+
+
+//categories
+#import "UIView+ILcategory.h"
 
 #endif
