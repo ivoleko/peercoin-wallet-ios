@@ -61,6 +61,11 @@
     }
 }
 
+- (void) setEnabled:(BOOL)enabled {
+    enabled = enabled;
+    self.alpha = enabled ? 1.0 : 0.5;
+}
+
 - (void) setHighlighted:(BOOL)highlighted {
     self.backgroundColor = [self.backgroundColor colorWithAlphaComponent:highlighted ? 0.8 : 1.0];
 }

@@ -20,6 +20,9 @@
 "Button.createWallet" = "Create New Wallet";
 "Button.recoverWallet" = "Recover Old Wallet";
 "Button.writeDownPaperKey" = "Write Down Paper Key";
+"Button.previous" = "Previous";
+"Button.next" = "Next";
+
 
 
 //Labels
@@ -28,6 +31,11 @@
 "Label.setPinDesc2" = "\nRepeat PIN to confirm it!";
 "Label.rememberPin" = "Remember this PIN. If you forget it, you won’t be able to access your peercoins.";
 "Label.paperKey.desc" = "Paper Key is the only way to restore your Peercoin Wallet if you lose, reset, corrupt or upgrade your phone.\n\nWe will show you list of words to write down on piece of paper and keep safe.";
+"Label.paperKey.step1" = "Step 1";
+"Label.paperKey.step2" = "Step 2";
+"Label.paperKey.step1.desc" = "Write down each word in exact order and store it in a safe place.";
+"Label.paperKey.step2.desc" = "To make sure everything was written down correctly, please enter the following words from your paper key.";
+"Label.paperKey.position" = "%ld of %ld";
 
 
 //Title

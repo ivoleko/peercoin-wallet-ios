@@ -9,6 +9,7 @@
 #import "PPCPaperKey_1_ViewController.h"
 #import "PPCRoundButton.h"
 #import "PPCEnterPinViewController.h"
+#import "PPCPaperKey_2_ViewController.h"
 
 @interface PPCPaperKey_1_ViewController ()
 
@@ -38,7 +39,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = kPPCColor_lightGrey;
+    self.view.backgroundColor = kPPCColor_lightGray;
     self.headerBackground.backgroundColor = kPPCColor_dark;
     
     self.labelTitle.text = NSLocalizedString(@"Title.paperKey", nil);
@@ -67,8 +68,13 @@
     enterPinVC.allowBiometrics = YES;
   
     [enterPinVC setCallback:^(NSError *error, BOOL userCanceled) {
+        
+        PPCPaperKey_2_ViewController *vc = [[PPCPaperKey_2_ViewController alloc] initWithXIB];
+        vc.delegate = self.delegate;
+        [vc setArrayOfWords:@[@"acid", @"case", @"enroll", @"fox", @"green", @"junk", @"magnet", @"media", @"price", @"safe", @"unknown", @"water"]];
+        
         [self dismissViewControllerAnimated:YES completion:^{
-            
+            [self.navigationController pushViewController:vc animated:YES];
         }];
     }];
     

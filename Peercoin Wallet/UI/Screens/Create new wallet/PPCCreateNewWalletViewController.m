@@ -52,11 +52,11 @@
     self.currentEntry = [NSMutableString string];
     
     self.virtualKeyboard.delegate = self;
-    self.virtualKeyboard.keyboardBackground = kPPCColor_lightGrey;
+    self.virtualKeyboard.keyboardBackground = kPPCColor_lightGray;
     self.virtualKeyboard.buttonTint = kPPCColor_dark;
     self.virtualKeyboard.buttonBackground = [UIColor colorWithRed:221.0/255.0 green:221.0/255.0 blue:221.0/255.0 alpha:1.0];
 
-    self.view.backgroundColor = kPPCColor_lightGrey;
+    self.view.backgroundColor = kPPCColor_lightGray;
     
     self.title = NSLocalizedString(@"Title.setPIN", nil);
     self.labelFooterCaution.text = NSLocalizedString(@"Label.caution", nil);

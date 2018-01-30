@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PPCPaperKeyView">
+            <connections>
+                <outlet property="constraintCenterVertical" destination="uXZ-Zv-HTm" id="ues-P3-82Y"/>
+                <outlet property="label" destination="dER-Pw-pAR" id="nFv-hU-aZ6"/>
+                <outlet property="mainView" destination="iN0-l3-epB" id="Mar-Pk-XW8"/>
+                <outlet property="viewCircle" destination="QZC-ih-edR" id="9Ld-4D-ezh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="391"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QZC-ih-edR">
+                    <rect key="frame" x="120" y="128" width="134" height="134"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dER-Pw-pAR">
+                            <rect key="frame" x="0.0" y="0.0" width="134" height="134"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="134" id="hh1-OU-Dd4"/>
+                        <constraint firstAttribute="height" constant="134" id="ojC-P3-YwS"/>
+                        <constraint firstItem="dER-Pw-pAR" firstAttribute="top" secondItem="QZC-ih-edR" secondAttribute="top" id="pFg-Re-RwA"/>
+                        <constraint firstAttribute="bottom" secondItem="dER-Pw-pAR" secondAttribute="bottom" id="pWT-Xv-qlH"/>
+                        <constraint firstAttribute="trailing" secondItem="dER-Pw-pAR" secondAttribute="trailing" id="xUZ-Ra-Xuz"/>
+                        <constraint firstItem="dER-Pw-pAR" firstAttribute="leading" secondItem="QZC-ih-edR" secondAttribute="leading" id="yF4-MD-3H3"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="QZC-ih-edR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Fgp-1i-2Y8"/>
+                <constraint firstItem="QZC-ih-edR" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="uXZ-Zv-HTm"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-78" y="48"/>
+        </view>
+    </objects>
+</document>

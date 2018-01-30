@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D73A8847202075D50022746D /* PPCPaperKey_2_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D73A8845202075D50022746D /* PPCPaperKey_2_ViewController.m */; };
+		D73A8848202075D50022746D /* PPCPaperKey_2_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D73A8846202075D50022746D /* PPCPaperKey_2_ViewController.xib */; };
+		D73A884C202088010022746D /* PPCPaperKeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = D73A884B202088010022746D /* PPCPaperKeyView.m */; };
+		D73A884E202088120022746D /* PPCPaperKeyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D73A884D202088120022746D /* PPCPaperKeyView.xib */; };
 		D7DF54C6201B59A200701D55 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF54C5201B59A200701D55 /* AppDelegate.m */; };
 		D7DF54CE201B59A200701D55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7DF54CD201B59A200701D55 /* Assets.xcassets */; };
 		D7DF54D4201B59A200701D55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF54D3201B59A200701D55 /* main.m */; };
@@ -63,6 +67,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D73A8844202075D50022746D /* PPCPaperKey_2_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCPaperKey_2_ViewController.h; sourceTree = "<group>"; };
+		D73A8845202075D50022746D /* PPCPaperKey_2_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCPaperKey_2_ViewController.m; sourceTree = "<group>"; };
+		D73A8846202075D50022746D /* PPCPaperKey_2_ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PPCPaperKey_2_ViewController.xib; sourceTree = "<group>"; };
+		D73A884A202088010022746D /* PPCPaperKeyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCPaperKeyView.h; sourceTree = "<group>"; };
+		D73A884B202088010022746D /* PPCPaperKeyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCPaperKeyView.m; sourceTree = "<group>"; };
+		D73A884D202088120022746D /* PPCPaperKeyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PPCPaperKeyView.xib; sourceTree = "<group>"; };
 		D7DF54C1201B59A200701D55 /* Peercoin Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Peercoin Wallet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7DF54C4201B59A200701D55 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D7DF54C5201B59A200701D55 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -157,6 +167,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D73A8849202087E80022746D /* Scroll View Element */ = {
+			isa = PBXGroup;
+			children = (
+				D73A884A202088010022746D /* PPCPaperKeyView.h */,
+				D73A884B202088010022746D /* PPCPaperKeyView.m */,
+				D73A884D202088120022746D /* PPCPaperKeyView.xib */,
+			);
+			path = "Scroll View Element";
+			sourceTree = "<group>";
+		};
 		D7DF54B8201B59A200701D55 = {
 			isa = PBXGroup;
 			children = (
@@ -389,9 +409,13 @@
 		D7DF557E201F1CFD00701D55 /* Paper Key */ = {
 			isa = PBXGroup;
 			children = (
+				D73A8849202087E80022746D /* Scroll View Element */,
 				D7DF5596201F631300701D55 /* PPCPaperKey_1_ViewController.h */,
 				D7DF5597201F631300701D55 /* PPCPaperKey_1_ViewController.m */,
 				D7DF5598201F631300701D55 /* PPCPaperKey_1_ViewController.xib */,
+				D73A8844202075D50022746D /* PPCPaperKey_2_ViewController.h */,
+				D73A8845202075D50022746D /* PPCPaperKey_2_ViewController.m */,
+				D73A8846202075D50022746D /* PPCPaperKey_2_ViewController.xib */,
 			);
 			path = "Paper Key";
 			sourceTree = "<group>";
@@ -523,10 +547,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D73A884E202088120022746D /* PPCPaperKeyView.xib in Resources */,
 				D7DF552B201BCF4E00701D55 /* PPCPINView.xib in Resources */,
 				D7DF5570201C90E700701D55 /* Localizable.strings in Resources */,
 				D7DF5518201BA58300701D55 /* PPCRootViewController.xib in Resources */,
 				D7DF54CE201B59A200701D55 /* Assets.xcassets in Resources */,
+				D73A8848202075D50022746D /* PPCPaperKey_2_ViewController.xib in Resources */,
 				D7DF558C201F298E00701D55 /* PPCVirtualKeyboard.xib in Resources */,
 				D7DF5575201C91CC00701D55 /* LaunchScreen.storyboard in Resources */,
 				D7DF5531201C809700701D55 /* PPCFirstLaunchViewController.xib in Resources */,
@@ -586,8 +612,10 @@
 				D7DF5535201C80F100701D55 /* PPCRoundButton.m in Sources */,
 				D7DF5512201BA3DB00701D55 /* PPCNavigationController.m in Sources */,
 				D7DF5529201BCF3C00701D55 /* PPCPINView.m in Sources */,
+				D73A8847202075D50022746D /* PPCPaperKey_2_ViewController.m in Sources */,
 				D7DF54D4201B59A200701D55 /* main.m in Sources */,
 				D7DF5508201B7C8900701D55 /* Reachability.m in Sources */,
+				D73A884C202088010022746D /* PPCPaperKeyView.m in Sources */,
 				D7DF5517201BA58300701D55 /* PPCRootViewController.m in Sources */,
 				D7DF5588201F252C00701D55 /* PPCVirtualKeyboard.m in Sources */,
 				D7DF54C6201B59A200701D55 /* AppDelegate.m in Sources */,
