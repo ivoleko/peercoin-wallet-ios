@@ -1,5 +1,5 @@
 //
-//  PPCFirstLaunchViewController.h
+//  PPCCreateNewWalletViewController.h
 //  Peercoin Wallet
 //
 //  Created by Ivo Leko on 27/01/2018.
@@ -8,8 +8,10 @@
 
 #import "PPCViewController.h"
 
-@interface PPCFirstLaunchViewController : PPCViewController
+@interface PPCCreateNewWalletViewController : PPCViewController
 
 @property (nonatomic, weak) id <PPCWalletManagementDelegate> delegate;
+
+
 
 @end

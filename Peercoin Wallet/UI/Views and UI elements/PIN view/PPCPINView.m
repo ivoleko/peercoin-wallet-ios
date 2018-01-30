@@ -42,14 +42,13 @@
     [self addSubview:self.mainView];
     _colorNormal = [UIColor blackColor];
     _colorHighlighted = [UIColor whiteColor];
-    
-    for (UIView *view in self.collectionOfPinElements) {
-        [view circleMask];
-    }
+  
 }
 
 - (void) layoutSubviews {
     [super layoutSubviews];
+    [self.mainView setNeedsLayout];
+    [self.mainView layoutIfNeeded];
     for (UIView *view in self.collectionOfPinElements) {
         [view circleMask];
     }
@@ -81,6 +80,51 @@
         else
             [(UIView *)self.collectionOfPinElements[i] setBackgroundColor:self.colorNormal];
     }
+}
+
+- (void) shakeIt {
+    
+    CGRect frame = self.mainView.frame;
+    
+    [UIView animateKeyframesWithDuration:0.4 delay:0 options:UIViewKeyframeAnimationOptionCalculationModeLinear animations:^{
+        
+        [UIView addKeyframeWithRelativeStartTime:0 relativeDuration:0.2 animations:^{
+            CGRect rect = frame;
+            rect.origin.x -= 18;
+            self.mainView.frame = rect;
+        }];
+        [UIView addKeyframeWithRelativeStartTime:0.2 relativeDuration:0.25 animations:^{
+            CGRect rect = frame;
+            rect.origin.x += 15;
+            self.mainView.frame = rect;
+        }];
+        [UIView addKeyframeWithRelativeStartTime:0.45 relativeDuration:0.2 animations:^{
+            CGRect rect = frame;
+            rect.origin.x -= 12;
+            self.mainView.frame = rect;
+        }];
+        [UIView addKeyframeWithRelativeStartTime:0.65 relativeDuration:0.15 animations:^{
+            CGRect rect = frame;
+            rect.origin.x += 9;
+            self.mainView.frame = rect;
+        }];
+        [UIView addKeyframeWithRelativeStartTime:0.8 relativeDuration:0.1 animations:^{
+            CGRect rect = frame;
+            rect.origin.x -= 6;
+            self.mainView.frame = rect;
+        }];
+        [UIView addKeyframeWithRelativeStartTime:0.9 relativeDuration:0.05 animations:^{
+            CGRect rect = frame;
+            rect.origin.x += 3;
+            self.mainView.frame = rect;
+        }];
+        [UIView addKeyframeWithRelativeStartTime:0.95 relativeDuration:0.05 animations:^{
+            CGRect rect = frame;
+            self.mainView.frame = rect;
+        }];
+    } completion:^(BOOL finished) {
+        self.mainView.frame = frame;
+    }];
 }
 
 

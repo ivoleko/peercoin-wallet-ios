@@ -16,4 +16,6 @@
 - (id) initWithXIB;
 + (id) viewControllerFromStoryboard;
 
+- (void) showBasicAlertWithTitle: (NSString *) title andMessage: (NSString *) message;
+
 @end

@@ -9,6 +9,7 @@
 #import "PPCFirstLaunchViewController.h"
 #import "PPCRoundButton.h"
 #import "PPCIntroView.h"
+#import "PPCCreateNewWalletViewController.h"
 
 @interface PPCFirstLaunchViewController ()
 
@@ -23,10 +24,22 @@
 
 @implementation PPCFirstLaunchViewController
 
+
+#pragma mark - allocation, memory and deallocation
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+
+#pragma mark - view lifecycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.view.backgroundColor = kPPCColor_dark;
+    [self.navigationController setNavigationBarHidden:YES];
     
     self.buttonCreateNewWallet.roundButtonType = PPCRoundButtonTypeGreen;
     [self.buttonCreateNewWallet setTitle:NSLocalizedString(@"Button.createWallet", nil) forState:UIControlStateNormal];
@@ -38,30 +51,24 @@
     
     self.introView = [[PPCIntroView alloc] initWithFrame:self.view.bounds];
     self.introView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-    [self.view insertSubview:self.introView atIndex:0];
-    
-    
+    self.introView.translatesAutoresizingMaskIntoConstraints = YES;
+    [self.view addSubview:self.introView];
+    self.introView.userInteractionEnabled = NO;
 }
 
 - (void) viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    [self.navigationController setNavigationBarHidden:YES];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-- (UIStatusBarStyle) preferredStatusBarStyle {
-    return UIStatusBarStyleLightContent;
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
 - (void) viewDidAppearOnce:(BOOL)animated {
     [super viewDidAppearOnce:animated];
     
-    //intro animation
     
+    self.introView.baseView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
+    
+    //intro animation
+
     [UIView animateWithDuration:0.2 delay:0.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
         self.introView.imageViewLogo.alpha = 0;
     } completion:^(BOOL finished) {
@@ -92,14 +99,23 @@
             
         }];
     }];
-    
-   
 }
 
 
+#pragma mark - IBActions
+
 - (IBAction)pressedCreateNewWallet:(id)sender {
+    PPCCreateNewWalletViewController *createVC = [[PPCCreateNewWalletViewController alloc] initWithXIB];
+    createVC.delegate = self.delegate;
+    [self.navigationController pushViewController:createVC animated:YES];
 }
 
 - (IBAction)pressedRecoverWallet:(id)sender {
+    
 }
+
+
 @end
+
+
+

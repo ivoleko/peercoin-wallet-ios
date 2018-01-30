@@ -17,6 +17,8 @@
 @property (nonatomic, strong) UIColor *colorHighlighted;
 @property (nonatomic) NSInteger highlightCount;
 
+- (void) shakeIt;
+
 
 
 @end

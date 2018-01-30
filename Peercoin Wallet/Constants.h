@@ -17,7 +17,13 @@
 #define kPPCColor_white      [UIColor whiteColor]
 #define kPPCColor_grey       [UIColor colorWithRed:99.0/255.0 green:99.0/255.0 blue:99.0/255.0 alpha:1.0]
 #define kPPCColor_lightGrey  [UIColor colorWithRed:239.0/255.0 green:239.0/255.0 blue:239.0/255.0 alpha:1.0]
+#define kPPCColor_keyboardButton  [UIColor colorWithRed:114.0/255.0 green:114.0/255.0 blue:114.0/255.0 alpha:1.0]
 
+
+
+
+//constants
+#define PINlenght           6
 
 
 

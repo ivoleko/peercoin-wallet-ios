@@ -7,9 +7,29 @@
 */
 
 
+//Alert
+"Alert.OK" = "OK";
+"Alert.error" = "Error";
+"Alert.PIN.exceedNumberOfDigits" = "Exceeded number of digits.";
+
+
+
 
 
 //Buttons
 "Button.createWallet" = "Create New Wallet";
 "Button.recoverWallet" = "Recover Old Wallet";
+"Button.writeDownPaperKey" = "Write Down Paper Key";
 
+
+//Labels
+"Label.caution" = "Caution!";
+"Label.setPinDesc" = "Your PIN will be used to unlock your Peercoin Wallet and to send money.";
+"Label.setPinDesc2" = "\nRepeat PIN to confirm it!";
+"Label.rememberPin" = "Remember this PIN. If you forget it, you won’t be able to access your peercoins.";
+"Label.paperKey.desc" = "Paper Key is the only way to restore your Peercoin Wallet if you lose, reset, corrupt or upgrade your phone.\n\nWe will show you list of words to write down on piece of paper and keep safe.";
+
+
+//Title
+"Title.setPIN" = "Set PIN";
+"Title.paperKey" = "Paper Key";

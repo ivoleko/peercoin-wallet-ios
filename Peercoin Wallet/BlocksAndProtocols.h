@@ -10,13 +10,13 @@
 #define BlocksAndProtocols_h
 #import <Foundation/Foundation.h>
 
-@protocol PPCWalletCreationDelegate 
-
-- (void) walletSuccesfullyCreated;
-- (void) walletSuccesfullyRecovered;
-- (void) walletOperationCanceled;
-
+@protocol PPCWalletManagementDelegate
+- (void) walletManagementFinished;
 @end
+
+
+
+
 
 
 #endif /* BlocksAndProtocols_h */

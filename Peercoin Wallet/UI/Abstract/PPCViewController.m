@@ -36,6 +36,10 @@
     return vc;
 }
 
+- (UIStatusBarStyle) preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
+
 #pragma mark - view lifecycle
 
 
@@ -67,6 +71,19 @@
     
 }
 - (void) viewDidAppearOnce: (BOOL) animated {
+    
+}
+
+- (void) showBasicAlertWithTitle: (NSString *) title andMessage: (NSString *) message {
+    
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:title
+                                                                   message:message
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Alert.OK", nil) style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action) {}];
+    [alert addAction:defaultAction];
+    [self presentViewController:alert animated:YES completion:nil];
     
 }
 

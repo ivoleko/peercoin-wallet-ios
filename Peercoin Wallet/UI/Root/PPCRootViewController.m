@@ -33,9 +33,6 @@
     
     //configure container view
     self.containerView.currentViewController = self;
-    
-    
-  
 }
 
 - (void) viewDidAppearOnce:(BOOL)animated {
@@ -50,9 +47,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (UIStatusBarStyle) preferredStatusBarStyle {
-    return UIStatusBarStyleLightContent;
-}
 
 
 #pragma mark - UI next step

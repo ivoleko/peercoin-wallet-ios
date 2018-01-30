@@ -36,10 +36,10 @@
 
 - (void) commonInit {
     [[NSBundle mainBundle] loadNibNamed:@"PPCIntroView" owner:self options:nil];
-    self.baseView.backgroundColor = kPPCColor_dark;
+    self.backgroundColor = [UIColor clearColor];
+    self.baseView.backgroundColor = [UIColor clearColor];
     self.baseView.frame = self.bounds;
     self.baseView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     [self addSubview:self.baseView];
-    self.backgroundColor = [UIColor clearColor];
 }
 @end

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
+        <deployment version="2304" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -21,20 +22,24 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HOZ-MN-rbd" customClass="PPCRoundButton">
-                    <rect key="frame" x="16" y="525" width="343" height="50"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HOZ-MN-rbd" customClass="PPCRoundButton">
+                    <rect key="frame" x="16" y="531" width="343" height="50"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="CZA-OQ-dUb"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                     <state key="normal" title="Button"/>
                     <connections>
                         <action selector="pressedCreateNewWallet:" destination="-1" eventType="touchUpInside" id="9cZ-wB-qbL"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ztr-de-9Cc" customClass="PPCRoundButton">
-                    <rect key="frame" x="16" y="591" width="343" height="50"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ztr-de-9Cc" customClass="PPCRoundButton">
+                    <rect key="frame" x="16" y="597" width="343" height="50"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="ccS-EV-sD9"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                     <state key="normal" title="Button"/>
                     <connections>
@@ -43,7 +48,16 @@
                 </button>
             </subviews>
             <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-            <point key="canvasLocation" x="-62" y="-162"/>
+            <constraints>
+                <constraint firstItem="HOZ-MN-rbd" firstAttribute="leading" secondItem="Rah-nM-y7L" secondAttribute="leading" constant="16" id="1Db-IV-aom"/>
+                <constraint firstItem="ztr-de-9Cc" firstAttribute="top" secondItem="HOZ-MN-rbd" secondAttribute="bottom" constant="16" id="4ML-6V-f6D"/>
+                <constraint firstItem="ztr-de-9Cc" firstAttribute="leading" secondItem="Rah-nM-y7L" secondAttribute="leading" constant="16" id="HFm-1a-v8s"/>
+                <constraint firstItem="Rah-nM-y7L" firstAttribute="trailing" secondItem="ztr-de-9Cc" secondAttribute="trailing" constant="16" id="Lea-mR-Gik"/>
+                <constraint firstItem="Rah-nM-y7L" firstAttribute="bottom" secondItem="ztr-de-9Cc" secondAttribute="bottom" constant="20" id="gPQ-wT-geX"/>
+                <constraint firstItem="Rah-nM-y7L" firstAttribute="trailing" secondItem="HOZ-MN-rbd" secondAttribute="trailing" constant="16" id="p5R-5s-Th2"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Rah-nM-y7L"/>
+            <point key="canvasLocation" x="-71" y="-362"/>
         </view>
     </objects>
 </document>

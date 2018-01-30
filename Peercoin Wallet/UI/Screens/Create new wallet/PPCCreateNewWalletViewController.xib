@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PPCCreateNewWalletViewController">
+            <connections>
+                <outlet property="backgroundViewForIPhoneX" destination="lCT-0b-m0R" id="31h-Uk-k6U"/>
+                <outlet property="labelDescription" destination="Uvz-Ul-ls2" id="80J-eQ-Lmy"/>
+                <outlet property="labelFooterCaution" destination="OqM-qz-Inl" id="uWk-CQ-PWU"/>
+                <outlet property="labelFooterExplanation" destination="ndn-99-kVH" id="wif-0Y-mqM"/>
+                <outlet property="pinView" destination="enm-dU-ML6" id="5rr-4N-qOv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewFooter" destination="FSc-Rk-DjI" id="sIi-pa-Zjn"/>
+                <outlet property="virtualKeyboard" destination="KFP-1m-Ut6" id="nR0-0A-yHM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your PIN will be used to unlock your Peercoin Wallet and to send money." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uvz-Ul-ls2">
+                    <rect key="frame" x="20" y="35" width="335" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="enm-dU-ML6" customClass="PPCPINView">
+                    <rect key="frame" x="84" y="101" width="206" height="24"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="H4P-Gi-9QK"/>
+                        <constraint firstAttribute="width" constant="206" id="Y1h-yO-yVe"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FSc-Rk-DjI">
+                    <rect key="frame" x="20" y="311" width="335" height="56"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caution!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OqM-qz-Inl">
+                            <rect key="frame" x="0.0" y="0.0" width="335" height="18"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                            <color key="textColor" red="0.81960784313725488" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember this PIN. If you forget it, you won’t be able to access your peercoins." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndn-99-kVH">
+                            <rect key="frame" x="0.0" y="20" width="335" height="36"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="ndn-99-kVH" firstAttribute="leading" secondItem="FSc-Rk-DjI" secondAttribute="leading" id="0Pd-sh-afe"/>
+                        <constraint firstItem="OqM-qz-Inl" firstAttribute="top" secondItem="FSc-Rk-DjI" secondAttribute="top" id="4I6-o1-nlu"/>
+                        <constraint firstItem="ndn-99-kVH" firstAttribute="top" secondItem="OqM-qz-Inl" secondAttribute="bottom" constant="2" id="72I-RJ-hXb"/>
+                        <constraint firstItem="OqM-qz-Inl" firstAttribute="leading" secondItem="FSc-Rk-DjI" secondAttribute="leading" id="AWz-xo-tdP"/>
+                        <constraint firstAttribute="trailing" secondItem="OqM-qz-Inl" secondAttribute="trailing" id="LoQ-b9-SoY"/>
+                        <constraint firstAttribute="trailing" secondItem="ndn-99-kVH" secondAttribute="trailing" id="V9T-hd-lt4"/>
+                        <constraint firstAttribute="bottom" secondItem="ndn-99-kVH" secondAttribute="bottom" id="pgc-67-vkd"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lCT-0b-m0R">
+                    <rect key="frame" x="0.0" y="387" width="375" height="216"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KFP-1m-Ut6" customClass="PPCVirtualKeyboard">
+                    <rect key="frame" x="0.0" y="387" width="375" height="216"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="216" id="deo-sP-wns"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Uvz-Ul-ls2" firstAttribute="leading" secondItem="HgH-1x-LLT" secondAttribute="leading" constant="20" id="0xc-E9-Y5K"/>
+                <constraint firstItem="KFP-1m-Ut6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3tp-DS-4Sx"/>
+                <constraint firstItem="lCT-0b-m0R" firstAttribute="leading" secondItem="HgH-1x-LLT" secondAttribute="leading" id="49m-qc-KAY"/>
+                <constraint firstItem="HgH-1x-LLT" firstAttribute="trailing" secondItem="Uvz-Ul-ls2" secondAttribute="trailing" constant="20" id="49o-bc-eSA"/>
+                <constraint firstItem="enm-dU-ML6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="6jN-GT-chM"/>
+                <constraint firstItem="lCT-0b-m0R" firstAttribute="top" secondItem="KFP-1m-Ut6" secondAttribute="top" id="7KG-sW-xuo"/>
+                <constraint firstItem="KFP-1m-Ut6" firstAttribute="bottom" secondItem="HgH-1x-LLT" secondAttribute="bottom" id="N3T-CE-1we"/>
+                <constraint firstItem="FSc-Rk-DjI" firstAttribute="leading" secondItem="HgH-1x-LLT" secondAttribute="leading" constant="20" id="Qrd-OS-iwX"/>
+                <constraint firstItem="HgH-1x-LLT" firstAttribute="trailing" secondItem="FSc-Rk-DjI" secondAttribute="trailing" constant="20" id="TVj-b8-62e"/>
+                <constraint firstItem="lCT-0b-m0R" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="Tu5-jZ-fwd"/>
+                <constraint firstAttribute="trailing" secondItem="KFP-1m-Ut6" secondAttribute="trailing" id="V1o-Wn-ad7"/>
+                <constraint firstItem="Uvz-Ul-ls2" firstAttribute="top" secondItem="HgH-1x-LLT" secondAttribute="top" constant="35" id="aIh-fk-omX"/>
+                <constraint firstItem="enm-dU-ML6" firstAttribute="top" secondItem="Uvz-Ul-ls2" secondAttribute="bottom" constant="25" id="i23-tO-6I7"/>
+                <constraint firstItem="HgH-1x-LLT" firstAttribute="trailing" secondItem="lCT-0b-m0R" secondAttribute="trailing" id="uuv-FO-Tgx"/>
+                <constraint firstItem="KFP-1m-Ut6" firstAttribute="top" secondItem="FSc-Rk-DjI" secondAttribute="bottom" constant="20" id="xEn-ep-bcX"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+            <viewLayoutGuide key="safeArea" id="HgH-1x-LLT"/>
+            <point key="canvasLocation" x="-453" y="-287"/>
+        </view>
+    </objects>
+</document>

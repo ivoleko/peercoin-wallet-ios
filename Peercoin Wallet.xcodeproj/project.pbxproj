@@ -33,6 +33,16 @@
 		D7DF5563201C820C00701D55 /* UIView+ILcategory.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF5548201C820C00701D55 /* UIView+ILcategory.m */; };
 		D7DF5570201C90E700701D55 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7DF5572201C90E700701D55 /* Localizable.strings */; };
 		D7DF5575201C91CC00701D55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DF5573201C91CC00701D55 /* LaunchScreen.storyboard */; };
+		D7DF557C201CA5D400701D55 /* PPCCreateNewWalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF557A201CA5D400701D55 /* PPCCreateNewWalletViewController.m */; };
+		D7DF557D201CA5D400701D55 /* PPCCreateNewWalletViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7DF557B201CA5D400701D55 /* PPCCreateNewWalletViewController.xib */; };
+		D7DF5583201F239000701D55 /* PPCEnterPinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF5581201F239000701D55 /* PPCEnterPinViewController.m */; };
+		D7DF5584201F239000701D55 /* PPCEnterPinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7DF5582201F239000701D55 /* PPCEnterPinViewController.xib */; };
+		D7DF5588201F252C00701D55 /* PPCVirtualKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF5587201F252C00701D55 /* PPCVirtualKeyboard.m */; };
+		D7DF558C201F298E00701D55 /* PPCVirtualKeyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7DF558B201F298E00701D55 /* PPCVirtualKeyboard.xib */; };
+		D7DF558E201F310800701D55 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7DF558D201F310800701D55 /* AudioToolbox.framework */; };
+		D7DF5591201F4D9D00701D55 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7DF5590201F4D9D00701D55 /* LocalAuthentication.framework */; };
+		D7DF5599201F631300701D55 /* PPCPaperKey_1_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF5597201F631300701D55 /* PPCPaperKey_1_ViewController.m */; };
+		D7DF559A201F631300701D55 /* PPCPaperKey_1_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7DF5598201F631300701D55 /* PPCPaperKey_1_ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +110,20 @@
 		D7DF5574201C91CC00701D55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Peercoin Wallet/Base.lproj/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
 		D7DF5576201C91DD00701D55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D7DF5577201C951B00701D55 /* BlocksAndProtocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlocksAndProtocols.h; sourceTree = "<group>"; };
+		D7DF5579201CA5D400701D55 /* PPCCreateNewWalletViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCCreateNewWalletViewController.h; sourceTree = "<group>"; };
+		D7DF557A201CA5D400701D55 /* PPCCreateNewWalletViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCCreateNewWalletViewController.m; sourceTree = "<group>"; };
+		D7DF557B201CA5D400701D55 /* PPCCreateNewWalletViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PPCCreateNewWalletViewController.xib; sourceTree = "<group>"; };
+		D7DF5580201F239000701D55 /* PPCEnterPinViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCEnterPinViewController.h; sourceTree = "<group>"; };
+		D7DF5581201F239000701D55 /* PPCEnterPinViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCEnterPinViewController.m; sourceTree = "<group>"; };
+		D7DF5582201F239000701D55 /* PPCEnterPinViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PPCEnterPinViewController.xib; sourceTree = "<group>"; };
+		D7DF5586201F252C00701D55 /* PPCVirtualKeyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCVirtualKeyboard.h; sourceTree = "<group>"; };
+		D7DF5587201F252C00701D55 /* PPCVirtualKeyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCVirtualKeyboard.m; sourceTree = "<group>"; };
+		D7DF558B201F298E00701D55 /* PPCVirtualKeyboard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PPCVirtualKeyboard.xib; sourceTree = "<group>"; };
+		D7DF558D201F310800701D55 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D7DF5590201F4D9D00701D55 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		D7DF5596201F631300701D55 /* PPCPaperKey_1_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCPaperKey_1_ViewController.h; sourceTree = "<group>"; };
+		D7DF5597201F631300701D55 /* PPCPaperKey_1_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCPaperKey_1_ViewController.m; sourceTree = "<group>"; };
+		D7DF5598201F631300701D55 /* PPCPaperKey_1_ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PPCPaperKey_1_ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +131,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7DF5591201F4D9D00701D55 /* LocalAuthentication.framework in Frameworks */,
+				D7DF558E201F310800701D55 /* AudioToolbox.framework in Frameworks */,
 				D7DF5500201B79BE00701D55 /* Foundation.framework in Frameworks */,
 				D7DF54FE201B788A00701D55 /* CoreGraphics.framework in Frameworks */,
 				D7DF54FC201B786A00701D55 /* PureLayout.framework in Frameworks */,
@@ -192,6 +218,8 @@
 		D7DF54F8201B785B00701D55 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D7DF5590201F4D9D00701D55 /* LocalAuthentication.framework */,
+				D7DF558D201F310800701D55 /* AudioToolbox.framework */,
 				D7DF54FF201B79BE00701D55 /* Foundation.framework */,
 				D7DF54FD201B788A00701D55 /* CoreGraphics.framework */,
 				D7DF54FB201B786A00701D55 /* PureLayout.framework */,
@@ -264,6 +292,7 @@
 		D7DF551D201BA94B00701D55 /* Views and UI elements */ = {
 			isa = PBXGroup;
 			children = (
+				D7DF5585201F251300701D55 /* Virtual Keyboard */,
 				D7DF5532201C80D200701D55 /* Round Button */,
 				D7DF5526201BCEEE00701D55 /* PIN view */,
 				D7DF551E201BA95E00701D55 /* Intro View */,
@@ -286,6 +315,8 @@
 			children = (
 				D7DF552C201C7F2500701D55 /* First Launch */,
 				D7DF5525201BAAE600701D55 /* Create new wallet */,
+				D7DF557E201F1CFD00701D55 /* Paper Key */,
+				D7DF557F201F236C00701D55 /* Enter PIN */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -293,6 +324,9 @@
 		D7DF5525201BAAE600701D55 /* Create new wallet */ = {
 			isa = PBXGroup;
 			children = (
+				D7DF5579201CA5D400701D55 /* PPCCreateNewWalletViewController.h */,
+				D7DF557A201CA5D400701D55 /* PPCCreateNewWalletViewController.m */,
+				D7DF557B201CA5D400701D55 /* PPCCreateNewWalletViewController.xib */,
 			);
 			path = "Create new wallet";
 			sourceTree = "<group>";
@@ -350,6 +384,36 @@
 				D7DF5572201C90E700701D55 /* Localizable.strings */,
 			);
 			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		D7DF557E201F1CFD00701D55 /* Paper Key */ = {
+			isa = PBXGroup;
+			children = (
+				D7DF5596201F631300701D55 /* PPCPaperKey_1_ViewController.h */,
+				D7DF5597201F631300701D55 /* PPCPaperKey_1_ViewController.m */,
+				D7DF5598201F631300701D55 /* PPCPaperKey_1_ViewController.xib */,
+			);
+			path = "Paper Key";
+			sourceTree = "<group>";
+		};
+		D7DF557F201F236C00701D55 /* Enter PIN */ = {
+			isa = PBXGroup;
+			children = (
+				D7DF5580201F239000701D55 /* PPCEnterPinViewController.h */,
+				D7DF5581201F239000701D55 /* PPCEnterPinViewController.m */,
+				D7DF5582201F239000701D55 /* PPCEnterPinViewController.xib */,
+			);
+			path = "Enter PIN";
+			sourceTree = "<group>";
+		};
+		D7DF5585201F251300701D55 /* Virtual Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D7DF5586201F252C00701D55 /* PPCVirtualKeyboard.h */,
+				D7DF5587201F252C00701D55 /* PPCVirtualKeyboard.m */,
+				D7DF558B201F298E00701D55 /* PPCVirtualKeyboard.xib */,
+			);
+			path = "Virtual Keyboard";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -463,9 +527,13 @@
 				D7DF5570201C90E700701D55 /* Localizable.strings in Resources */,
 				D7DF5518201BA58300701D55 /* PPCRootViewController.xib in Resources */,
 				D7DF54CE201B59A200701D55 /* Assets.xcassets in Resources */,
+				D7DF558C201F298E00701D55 /* PPCVirtualKeyboard.xib in Resources */,
 				D7DF5575201C91CC00701D55 /* LaunchScreen.storyboard in Resources */,
 				D7DF5531201C809700701D55 /* PPCFirstLaunchViewController.xib in Resources */,
+				D7DF557D201CA5D400701D55 /* PPCCreateNewWalletViewController.xib in Resources */,
 				D7DF5523201BA9AD00701D55 /* PPCIntroView.xib in Resources */,
+				D7DF559A201F631300701D55 /* PPCPaperKey_1_ViewController.xib in Resources */,
+				D7DF5584201F239000701D55 /* PPCEnterPinViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,17 +580,21 @@
 			files = (
 				D7DF5563201C820C00701D55 /* UIView+ILcategory.m in Sources */,
 				D7DF5505201B7B5200701D55 /* PPCWebSessionManager.m in Sources */,
+				D7DF557C201CA5D400701D55 /* PPCCreateNewWalletViewController.m in Sources */,
 				D7DF5530201C809700701D55 /* PPCFirstLaunchViewController.m in Sources */,
+				D7DF5599201F631300701D55 /* PPCPaperKey_1_ViewController.m in Sources */,
 				D7DF5535201C80F100701D55 /* PPCRoundButton.m in Sources */,
 				D7DF5512201BA3DB00701D55 /* PPCNavigationController.m in Sources */,
 				D7DF5529201BCF3C00701D55 /* PPCPINView.m in Sources */,
 				D7DF54D4201B59A200701D55 /* main.m in Sources */,
 				D7DF5508201B7C8900701D55 /* Reachability.m in Sources */,
 				D7DF5517201BA58300701D55 /* PPCRootViewController.m in Sources */,
+				D7DF5588201F252C00701D55 /* PPCVirtualKeyboard.m in Sources */,
 				D7DF54C6201B59A200701D55 /* AppDelegate.m in Sources */,
 				D7DF550F201BA3BF00701D55 /* PPCViewController.m in Sources */,
 				D7DF551C201BA68500701D55 /* ILContainerView.m in Sources */,
 				D7DF5521201BA99A00701D55 /* PPCIntroView.m in Sources */,
+				D7DF5583201F239000701D55 /* PPCEnterPinViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -625,7 +697,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -674,7 +746,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -693,7 +765,7 @@
 				);
 				GCC_PREFIX_HEADER = "Peercoin Wallet/PrefixHeader.pch";
 				INFOPLIST_FILE = "Peercoin Wallet/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ivoleko.Peercoin-Wallet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -716,7 +788,7 @@
 				);
 				GCC_PREFIX_HEADER = "Peercoin Wallet/PrefixHeader.pch";
 				INFOPLIST_FILE = "Peercoin Wallet/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ivoleko.Peercoin-Wallet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
