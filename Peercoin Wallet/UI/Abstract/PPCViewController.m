@@ -74,6 +74,7 @@
     
 }
 
+#pragma mark - public methods
 - (void) showBasicAlertWithTitle: (NSString *) title andMessage: (NSString *) message {
     
     UIAlertController* alert = [UIAlertController alertControllerWithTitle:title
@@ -85,6 +86,13 @@
     [alert addAction:defaultAction];
     [self presentViewController:alert animated:YES completion:nil];
     
+}
+
+- (void) cleanNavigationStackOfViewControllers {
+    PPCNavigationController *nav = (PPCNavigationController *)self.navigationController;
+    if (!nav) return;
+    if (![nav isKindOfClass:[PPCNavigationController class]]) return;
+    [nav cleanNavigationStackOfViewControllers];
 }
 
 

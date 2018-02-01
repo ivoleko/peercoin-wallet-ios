@@ -10,10 +10,12 @@
 
 @interface PPCNavigationController : UINavigationController
 
++ (id) viewControllerFromStoryboard;
+- (id) initWithXIB;
+
 - (void) viewWillAppearOnce: (BOOL)animated;
 - (void) viewDidAppearOnce: (BOOL) animated;
 
-- (id) initWithXIB;
-+ (id) viewControllerFromStoryboard;
+- (void) cleanNavigationStackOfViewControllers;
 
 @end

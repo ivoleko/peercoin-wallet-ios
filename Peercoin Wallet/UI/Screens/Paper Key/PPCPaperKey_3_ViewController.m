@@ -94,6 +94,11 @@
     }
 }
 
+- (void) viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self cleanNavigationStackOfViewControllers];
+}
+
 #pragma mark - IBActions
 
 - (IBAction)pressedCancel:(id)sender {

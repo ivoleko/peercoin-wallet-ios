@@ -78,6 +78,21 @@
     
 }
 
+#pragma mark - public methods
+- (void) cleanNavigationStackOfViewControllers {
+    NSMutableArray *arrayM = [NSMutableArray arrayWithArray:self.viewControllers];
+    for (PPCViewController *viewController in self.viewControllers) {
+        if (self.viewControllers.lastObject == viewController)
+            continue;
+        
+        if (viewController.canBeRemovedFromNavigationController)
+            [arrayM removeObject:viewController];
+    }
+    
+    self.viewControllers = [NSArray arrayWithArray:arrayM];
+}
+
+
 
 
 @end

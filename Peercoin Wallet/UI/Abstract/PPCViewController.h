@@ -10,12 +10,16 @@
 
 @interface PPCViewController : UIViewController
 
+
+@property (nonatomic) BOOL canBeRemovedFromNavigationController;
+
++ (id) viewControllerFromStoryboard;
+- (id) initWithXIB;
+
 - (void) viewWillAppearOnce: (BOOL)animated;
 - (void) viewDidAppearOnce: (BOOL) animated;
 
-- (id) initWithXIB;
-+ (id) viewControllerFromStoryboard;
-
 - (void) showBasicAlertWithTitle: (NSString *) title andMessage: (NSString *) message;
+- (void) cleanNavigationStackOfViewControllers;
 
 @end

@@ -53,6 +53,10 @@
     [super didReceiveMemoryWarning];
 }
 
+- (void) dealloc {
+    
+}
+
 
 #pragma mark - view lifecycle
 
@@ -80,6 +84,12 @@
     [(PPCPaperKeyView *)self.arrayOfPaperKeyViews[0] showLabelWithAnimation:YES];
 }
 
+- (void) viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self cleanNavigationStackOfViewControllers];
+}
+
+
 #pragma mark - public
 - (void) setArrayOfWords: (NSArray *) arrayOfWords {
     NSAssert(!self.arrayOfWords, @"Array if already set!");
@@ -91,6 +101,9 @@
 #pragma mark - private
 
 - (void) proceedToStep2 {
+    self.canBeRemovedFromNavigationController = YES;
+
+    
     //find random words
     NSMutableArray *mutableArrayOfWords = [NSMutableArray array];
     NSMutableArray *mutableArrayOfPositions = [NSMutableArray array];

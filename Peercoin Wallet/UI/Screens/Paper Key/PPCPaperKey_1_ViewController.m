@@ -33,6 +33,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void) dealloc {
+    
+}
 
 
 #pragma mark - view lifecycle
@@ -53,6 +56,11 @@
     [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
+- (void) viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self cleanNavigationStackOfViewControllers];
+}
+
 #pragma mark - IBActions
 
 - (IBAction)pressedCancel:(id)sender {
@@ -61,6 +69,8 @@
 }
 
 - (IBAction)pressedWriteDown:(id)sender {
+    self.canBeRemovedFromNavigationController = YES;
+
     PPCEnterPinViewController *enterPinVC = [[PPCEnterPinViewController alloc] initWithXIB];
     enterPinVC.showIntro = NO;
     enterPinVC.translucent = YES;

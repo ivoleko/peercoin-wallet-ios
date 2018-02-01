@@ -107,6 +107,7 @@
   #warning need to create a wallet etc.
     
     
+    self.canBeRemovedFromNavigationController = YES;
     PPCPaperKey_1_ViewController *newVC = [[PPCPaperKey_1_ViewController alloc] initWithXIB];
     newVC.delegate = self.delegate;
     [self.navigationController pushViewController:newVC animated:YES];

@@ -32,6 +32,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void) dealloc {
+    
+}
 
 #pragma mark - view lifecycle
 
@@ -105,12 +108,14 @@
 #pragma mark - IBActions
 
 - (IBAction)pressedCreateNewWallet:(id)sender {
+    self.canBeRemovedFromNavigationController = YES;
     PPCCreateNewWalletViewController *createVC = [[PPCCreateNewWalletViewController alloc] initWithXIB];
     createVC.delegate = self.delegate;
     [self.navigationController pushViewController:createVC animated:YES];
 }
 
 - (IBAction)pressedRecoverWallet:(id)sender {
+    self.canBeRemovedFromNavigationController = YES;
     
 }
 
