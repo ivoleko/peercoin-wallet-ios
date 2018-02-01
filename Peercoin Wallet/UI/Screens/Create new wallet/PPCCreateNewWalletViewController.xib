@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PPCCreateNewWalletViewController">
             <connections>
                 <outlet property="animationHolderView" destination="Lg7-i1-3XX" id="1b2-43-q7X"/>
+                <outlet property="constraintLabelTop" destination="aIh-fk-omX" id="hrn-IY-K4T"/>
                 <outlet property="labelCheckMark" destination="gYh-jt-9pD" id="MIy-qe-QYd"/>
                 <outlet property="labelDescription" destination="Uvz-Ul-ls2" id="80J-eQ-Lmy"/>
                 <outlet property="labelDescription2" destination="ggP-jo-bd4" id="HyG-mJ-hsq"/>
@@ -146,7 +147,7 @@
             <constraints>
                 <constraint firstItem="i5M-Pr-FkT" firstAttribute="trailing" secondItem="Rhr-Lo-g3w" secondAttribute="trailing" id="9bp-y5-8pM"/>
                 <constraint firstItem="Lg7-i1-3XX" firstAttribute="leading" secondItem="Rhr-Lo-g3w" secondAttribute="leading" id="P1E-Ay-3oQ"/>
-                <constraint firstItem="i5M-Pr-FkT" firstAttribute="top" secondItem="Rhr-Lo-g3w" secondAttribute="top" id="asd-f5-ulu"/>
+                <constraint firstItem="i5M-Pr-FkT" firstAttribute="top" secondItem="Rhr-Lo-g3w" secondAttribute="top" id="RCa-19-OzO"/>
                 <constraint firstItem="Rhr-Lo-g3w" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="oiD-cY-EOk"/>
                 <constraint firstItem="i5M-Pr-FkT" firstAttribute="leading" secondItem="Rhr-Lo-g3w" secondAttribute="leading" id="pbz-Cv-rWX"/>
                 <constraint firstItem="Rhr-Lo-g3w" firstAttribute="bottom" secondItem="Lg7-i1-3XX" secondAttribute="bottom" id="qmP-BL-bWM"/>

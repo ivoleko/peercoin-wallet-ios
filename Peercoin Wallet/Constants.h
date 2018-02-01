@@ -10,6 +10,13 @@
 #define Constants_h
 
 //
+// CONDITIONS
+//
+#define isIphone5                   ([[UIScreen mainScreen] bounds].size.height == 568)
+#define isIphone4                   ([[UIScreen mainScreen] bounds].size.height == 480)
+
+
+//
 // COLORS
 //
 #define kPPCColor_dark              [UIColor colorWithRed:51.0/255.0 green:51.0/255.0 blue:51.0/255.0 alpha:1.0]

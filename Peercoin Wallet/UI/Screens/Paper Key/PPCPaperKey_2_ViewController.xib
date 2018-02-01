@@ -170,9 +170,10 @@
             <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="V58-rA-yeX" secondAttribute="trailing" id="19T-Xa-7Vs"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="top" secondItem="W6D-Un-Low" secondAttribute="top" id="3yM-11-u0D"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="top" secondItem="W6D-Un-Low" secondAttribute="top" priority="750" id="3yM-11-u0D"/>
                 <constraint firstItem="FVh-hU-g2l" firstAttribute="bottom" secondItem="W6D-Un-Low" secondAttribute="bottom" id="AVx-sz-C35"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="V58-rA-yeX" secondAttribute="bottom" id="ByH-C2-NCU"/>
+                <constraint firstItem="W6D-Un-Low" firstAttribute="top" relation="greaterThanOrEqual" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="EdE-pG-W3I"/>
                 <constraint firstItem="V58-rA-yeX" firstAttribute="top" secondItem="W6D-Un-Low" secondAttribute="bottom" id="GdU-Qy-pOl"/>
                 <constraint firstItem="FVh-hU-g2l" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Skh-45-ezO"/>
                 <constraint firstItem="V58-rA-yeX" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Ssd-xX-rMO"/>

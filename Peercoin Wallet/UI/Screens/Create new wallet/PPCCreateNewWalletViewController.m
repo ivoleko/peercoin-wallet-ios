@@ -35,6 +35,7 @@
 @property (nonatomic, strong) NSString *choosenPIN;
 @property (nonatomic, strong) NSMutableString *currentEntry;
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintLabelTop;
 
 
 @end
@@ -77,6 +78,10 @@
     self.pinView.highlightCount = 0;
     self.pinView.colorNormal = kPPCColor_dark;
     self.pinView.colorHighlighted = kPPCColor_green;
+    
+    
+    if (isIphone4)
+        self.constraintLabelTop.constant = 20;
     
     
  }
@@ -204,7 +209,7 @@
         return NO;
     }
     
-    [self.currentEntry appendFormat:@"%ld", digit];
+    [self.currentEntry appendFormat:@"%ld", (long)digit];
     self.pinView.highlightCount = self.currentEntry.length;
     
     if (self.currentEntry.length == PINlenght) {

@@ -22,10 +22,14 @@
 @property (weak, nonatomic) IBOutlet UIButton *buttonCancel;
 @property (weak, nonatomic) IBOutlet PPCRoundButton *buttonSubmit;
 
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintBottomFooter;
+
 
 @property (nonatomic, strong) NSMutableArray *arrayOfCells;
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintHeight;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintBottomFooter;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintButtonHeight;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintButtonTopMargin;
 
 - (IBAction)pressedCancel:(id)sender;
 - (IBAction)pressedSubmit:(id)sender;
@@ -62,15 +66,17 @@
     self.buttonSubmit.roundButtonType = PPCRoundButtonTypeGreen;
     
     
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(keyboardWillShow:)
-                                                 name:UIKeyboardWillShowNotification
-                                               object:nil];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(keyboardWillHide:)
-                                                 name:UIKeyboardWillHideNotification
-                                               object:nil];
+    if (!isIphone4) {
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(keyboardWillShow:)
+                                                     name:UIKeyboardWillShowNotification
+                                                   object:nil];
+        
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(keyboardWillHide:)
+                                                     name:UIKeyboardWillHideNotification
+                                                   object:nil];
+    }
     
     
     //to avoid separators on empty cells
@@ -80,6 +86,16 @@
     
     self.buttonSubmit.enabled = NO;
     
+    
+    //support for smaller devices
+    if (isIphone5 || isIphone4) {//iPhone 5, 5s, SE and 4s
+        self.constraintHeight.constant = 100;
+        self.constraintButtonHeight.constant = 44;
+        self.constraintButtonTopMargin.constant = 0;
+    }
+    
+    
+    
     [self.tableView reloadData];
 
 }
@@ -88,6 +104,7 @@
     [super viewWillAppearOnce:animated];
     [self.view layoutIfNeeded];
     [self.view setNeedsLayout];
+    
     if (self.arrayOfCells.count > 0) {
         PPCPaperKeyTableViewCell *cell = self.arrayOfCells[0];
         [cell.textField becomeFirstResponder];
@@ -172,13 +189,13 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSString *cellIdentifier = [NSString stringWithFormat:@"%ld-%ld", indexPath.section, indexPath.row];
+    NSString *cellIdentifier = [NSString stringWithFormat:@"%ld-%ld", (long)indexPath.section, (long)indexPath.row];
     
     //we need to store cells in memory all the time (static cells)
     PPCPaperKeyTableViewCell *cell;
     
     for (PPCPaperKeyTableViewCell *cellT in self.arrayOfCells) {
-        if (cellT.customCellIdentifier == cellIdentifier) {
+        if ([cellT.customCellIdentifier isEqualToString:cellIdentifier]) {
             cell = cellT;
             break;
         }

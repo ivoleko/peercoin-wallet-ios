@@ -81,7 +81,7 @@
                                                                    message:message
                                                             preferredStyle:UIAlertControllerStyleAlert];
     
-    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Alert.OK", nil) style:UIAlertActionStyleDefault
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Alert.OK", nil) style:UIAlertActionStyleCancel
                                                           handler:^(UIAlertAction * action) {}];
     [alert addAction:defaultAction];
     [self presentViewController:alert animated:YES completion:nil];

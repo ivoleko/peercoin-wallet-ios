@@ -191,7 +191,7 @@
         return NO;
     }
     
-    [self.currentEntry appendFormat:@"%ld", digit];
+    [self.currentEntry appendFormat:@"%ld", (long)digit];
     self.pinView.highlightCount = self.currentEntry.length;
     
     if (self.currentEntry.length == PINlenght) {

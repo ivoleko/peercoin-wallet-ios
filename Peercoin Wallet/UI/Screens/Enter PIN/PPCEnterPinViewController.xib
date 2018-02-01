@@ -128,15 +128,17 @@
             <constraints>
                 <constraint firstItem="lKE-8d-97L" firstAttribute="bottom" secondItem="JmG-w5-rLg" secondAttribute="bottom" id="0hP-jN-pzI"/>
                 <constraint firstItem="lKE-8d-97L" firstAttribute="bottom" secondItem="tUe-uc-Fck" secondAttribute="bottom" id="Bai-0C-ylu"/>
-                <constraint firstItem="lKE-8d-97L" firstAttribute="top" secondItem="JmG-w5-rLg" secondAttribute="top" id="CiJ-x9-BfV"/>
-                <constraint firstItem="lKE-8d-97L" firstAttribute="top" secondItem="tUe-uc-Fck" secondAttribute="top" id="D7d-is-O4d"/>
+                <constraint firstItem="lKE-8d-97L" firstAttribute="top" secondItem="tUe-uc-Fck" secondAttribute="top" priority="750" id="D7d-is-O4d"/>
+                <constraint firstItem="tUe-uc-Fck" firstAttribute="top" relation="greaterThanOrEqual" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="Kjo-gR-rCy"/>
                 <constraint firstItem="tUe-uc-Fck" firstAttribute="leading" secondItem="lKE-8d-97L" secondAttribute="leading" id="TOK-Zo-pnC"/>
                 <constraint firstItem="lKE-8d-97L" firstAttribute="trailing" secondItem="tUe-uc-Fck" secondAttribute="trailing" id="cim-V8-dsI"/>
                 <constraint firstItem="JmG-w5-rLg" firstAttribute="leading" secondItem="lKE-8d-97L" secondAttribute="leading" id="fHs-iR-XhS"/>
+                <constraint firstItem="JmG-w5-rLg" firstAttribute="top" secondItem="lKE-8d-97L" secondAttribute="top" priority="750" id="mLR-mQ-Z2d"/>
                 <constraint firstItem="lKE-8d-97L" firstAttribute="trailing" secondItem="JmG-w5-rLg" secondAttribute="trailing" id="sdH-Jh-MCu"/>
+                <constraint firstItem="JmG-w5-rLg" firstAttribute="top" relation="greaterThanOrEqual" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="xrE-w3-mFz"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="lKE-8d-97L"/>
-            <point key="canvasLocation" x="-284" y="-251"/>
+            <point key="canvasLocation" x="-210" y="-269"/>
         </view>
     </objects>
     <resources>
