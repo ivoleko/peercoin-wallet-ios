@@ -12,7 +12,7 @@
 
 @property (nonatomic, weak) id <PPCWalletManagementDelegate> delegate;
 
-- (void) setArrayOfWords: (NSArray *) arrayOfWords;
+- (void) setArrayOfWords: (NSArray <NSString *> *) arrayOfWords;
 
 
 @end

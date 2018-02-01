@@ -11,7 +11,8 @@
 "Alert.OK" = "OK";
 "Alert.error" = "Error";
 "Alert.PIN.exceedNumberOfDigits" = "Exceeded number of digits.";
-
+"Alert.paperKey.wrongWords.title" = "Incorrect";
+"Alert.paperKey.wrongWords.message" = "One or more words you have entered are incorrect.";
 
 
 
@@ -22,6 +23,9 @@
 "Button.writeDownPaperKey" = "Write Down Paper Key";
 "Button.previous" = "Previous";
 "Button.next" = "Next";
+"Button.finish" = "Finish";
+"Button.submit" = "Submit";
+
 
 
 
@@ -41,3 +45,8 @@
 //Title
 "Title.setPIN" = "Set PIN";
 "Title.paperKey" = "Paper Key";
+
+
+
+//Placeholders
+"Placeholder.word" = "Word #%ld";

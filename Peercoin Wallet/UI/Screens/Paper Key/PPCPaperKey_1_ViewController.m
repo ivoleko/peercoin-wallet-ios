@@ -39,7 +39,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = kPPCColor_lightGray;
+    self.view.backgroundColor = kPPCColor_lightGrayBG;
     self.headerBackground.backgroundColor = kPPCColor_dark;
     
     self.labelTitle.text = NSLocalizedString(@"Title.paperKey", nil);
@@ -72,9 +72,9 @@
         PPCPaperKey_2_ViewController *vc = [[PPCPaperKey_2_ViewController alloc] initWithXIB];
         vc.delegate = self.delegate;
         [vc setArrayOfWords:@[@"acid", @"case", @"enroll", @"fox", @"green", @"junk", @"magnet", @"media", @"price", @"safe", @"unknown", @"water"]];
-        
+        [self.navigationController pushViewController:vc animated:YES];
+
         [self dismissViewControllerAnimated:YES completion:^{
-            [self.navigationController pushViewController:vc animated:YES];
         }];
     }];
     

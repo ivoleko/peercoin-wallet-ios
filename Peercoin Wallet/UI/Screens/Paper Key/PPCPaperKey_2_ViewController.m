@@ -9,6 +9,7 @@
 #import "PPCPaperKey_2_ViewController.h"
 #import "PPCRoundButton.h"
 #import "PPCPaperKeyView.h"
+#import "PPCPaperKey_3_ViewController.h"
 
 @interface PPCPaperKey_2_ViewController () < UIScrollViewDelegate> {
     NSInteger currentPage;
@@ -82,10 +83,54 @@
 #pragma mark - public
 - (void) setArrayOfWords: (NSArray *) arrayOfWords {
     NSAssert(!self.arrayOfWords, @"Array if already set!");
+    NSAssert(self.arrayOfWords.count != kPPCpaperKeyNumberOfWords, @"Array needs to have 12 words");
+
     _arrayOfWords = [NSArray arrayWithArray:arrayOfWords];
 }
 
 #pragma mark - private
+
+- (void) proceedToStep2 {
+    //find random words
+    NSMutableArray *mutableArrayOfWords = [NSMutableArray array];
+    NSMutableArray *mutableArrayOfPositions = [NSMutableArray array];
+    NSMutableArray *mutableArrayOfAllPositions = [NSMutableArray arrayWithArray: @[@0, @1, @2, @3, @4, @5, @6, @7, @8, @9, @10, @11]];
+    
+    for (NSInteger i = 0; i < PINcheckNumberOfWords; i++) {
+        NSInteger randomIndex = arc4random() % mutableArrayOfAllPositions.count;
+        NSInteger position = [[mutableArrayOfAllPositions objectAtIndex:randomIndex] integerValue];
+        [mutableArrayOfWords addObject:self.arrayOfWords[position]];
+        [mutableArrayOfPositions addObject:@(position)];
+        [mutableArrayOfAllPositions removeObjectAtIndex:randomIndex];
+    }
+    
+    
+    //bubble sorting
+    BOOL swapped;
+    do {
+        swapped = NO;
+        for (int i=0; i < PINcheckNumberOfWords-1; i++) {
+            if ([mutableArrayOfPositions[i] integerValue] > [mutableArrayOfPositions[i+1] integerValue]) {
+                NSNumber *temp = mutableArrayOfPositions[i];
+                mutableArrayOfPositions[i] = mutableArrayOfPositions[i+1];
+                mutableArrayOfPositions[i+1] = temp;
+                
+                NSString *tempS = mutableArrayOfWords[i];
+                mutableArrayOfWords[i] = mutableArrayOfWords[i+1];
+                mutableArrayOfWords[i+1] = tempS;
+                swapped = YES;
+            }
+        }
+    } while (swapped);
+    
+    
+    PPCPaperKey_3_ViewController *vc = [[PPCPaperKey_3_ViewController alloc] initWithXIB];
+    vc.delegate = self.delegate;
+    vc.arrayOfWords = [NSArray arrayWithArray:mutableArrayOfWords];
+    vc.arrayOfPositions = [NSArray arrayWithArray:mutableArrayOfPositions];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 
 - (void) setUpScrollView {
 
@@ -159,7 +204,11 @@
     self.labelPosition.text = [NSString stringWithFormat:NSLocalizedString(@"Label.paperKey.position", nil), index+1, self.arrayOfWords.count];
     
     //update button
-    self.buttonPrevious.enabled = (index < 1) ? NO : YES;
+    [UIView animateWithDuration:0.35 delay:0.0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
+        self.buttonPrevious.enabled = (index < 1) ? NO : YES;
+    } completion:^(BOOL finished) {
+        
+    }];
     
     if (index<0)
         currentPage = 0;
@@ -167,6 +216,19 @@
         currentPage = self.arrayOfWords.count-1;
     else
         currentPage = index;
+    
+    [UIView animateWithDuration:0.35 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        if (currentPage == self.arrayOfWords.count-1) {
+            [self.buttonNext setRoundButtonType:PPCRoundButtonTypeGreen];
+            [self.buttonNext setTitle:NSLocalizedString(@"Button.finish", nil) forState:UIControlStateNormal];
+        }
+        else {
+            [self.buttonNext setRoundButtonType:PPCRoundButtonTypeDark];
+            [self.buttonNext setTitle:NSLocalizedString(@"Button.next", nil) forState:UIControlStateNormal];
+        }
+    } completion:^(BOOL finished) {
+        
+    }];
 }
 
 
@@ -180,11 +242,11 @@
 
 - (IBAction)pressedNext:(id)sender {
     NSInteger newPage = currentPage+1;
+    
     if (newPage > self.arrayOfWords.count-1) {
-#warning next screen
+        [self proceedToStep2];
         return;
     }
-    
     [self.scrollView setContentOffset:CGPointMake(newPage*self.scrollView.frame.size.width, 0) animated:YES];
     [(PPCPaperKeyView *)self.arrayOfPaperKeyViews[newPage] showLabelWithAnimation:YES];
 

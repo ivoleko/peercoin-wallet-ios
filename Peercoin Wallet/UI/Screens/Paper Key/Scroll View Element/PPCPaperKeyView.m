@@ -54,7 +54,7 @@
         return;
     
     if (animation) {
-        [UIView animateWithDuration:0.35 delay:0.3 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        [UIView animateWithDuration:0.35 delay:0.4 options:UIViewAnimationOptionCurveEaseOut animations:^{
             self.label.alpha = 1.0;
 
         } completion:^(BOOL finished) {

@@ -62,7 +62,7 @@
 }
 
 - (void) setEnabled:(BOOL)enabled {
-    enabled = enabled;
+    super.enabled = enabled;
     self.alpha = enabled ? 1.0 : 0.5;
 }
 

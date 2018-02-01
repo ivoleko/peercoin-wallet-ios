@@ -11,6 +11,11 @@
 		D73A8848202075D50022746D /* PPCPaperKey_2_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D73A8846202075D50022746D /* PPCPaperKey_2_ViewController.xib */; };
 		D73A884C202088010022746D /* PPCPaperKeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = D73A884B202088010022746D /* PPCPaperKeyView.m */; };
 		D73A884E202088120022746D /* PPCPaperKeyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D73A884D202088120022746D /* PPCPaperKeyView.xib */; };
+		D7569D272021D61800EFB7C7 /* PPCPaperKey_3_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7569D252021D61800EFB7C7 /* PPCPaperKey_3_ViewController.m */; };
+		D7569D282021D61800EFB7C7 /* PPCPaperKey_3_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7569D262021D61800EFB7C7 /* PPCPaperKey_3_ViewController.xib */; };
+		D7569D2A2021DB7200EFB7C7 /* JVFloatLabeledText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7569D292021DB7200EFB7C7 /* JVFloatLabeledText.framework */; };
+		D7569D2F2021F4E700EFB7C7 /* PPCPaperKeyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7569D2D2021F4E700EFB7C7 /* PPCPaperKeyTableViewCell.m */; };
+		D7569D302021F4E700EFB7C7 /* PPCPaperKeyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7569D2E2021F4E700EFB7C7 /* PPCPaperKeyTableViewCell.xib */; };
 		D7DF54C6201B59A200701D55 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF54C5201B59A200701D55 /* AppDelegate.m */; };
 		D7DF54CE201B59A200701D55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7DF54CD201B59A200701D55 /* Assets.xcassets */; };
 		D7DF54D4201B59A200701D55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF54D3201B59A200701D55 /* main.m */; };
@@ -73,6 +78,13 @@
 		D73A884A202088010022746D /* PPCPaperKeyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCPaperKeyView.h; sourceTree = "<group>"; };
 		D73A884B202088010022746D /* PPCPaperKeyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCPaperKeyView.m; sourceTree = "<group>"; };
 		D73A884D202088120022746D /* PPCPaperKeyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PPCPaperKeyView.xib; sourceTree = "<group>"; };
+		D7569D242021D61800EFB7C7 /* PPCPaperKey_3_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCPaperKey_3_ViewController.h; sourceTree = "<group>"; };
+		D7569D252021D61800EFB7C7 /* PPCPaperKey_3_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCPaperKey_3_ViewController.m; sourceTree = "<group>"; };
+		D7569D262021D61800EFB7C7 /* PPCPaperKey_3_ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PPCPaperKey_3_ViewController.xib; sourceTree = "<group>"; };
+		D7569D292021DB7200EFB7C7 /* JVFloatLabeledText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JVFloatLabeledText.framework; path = Carthage/Build/iOS/JVFloatLabeledText.framework; sourceTree = "<group>"; };
+		D7569D2C2021F4E700EFB7C7 /* PPCPaperKeyTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCPaperKeyTableViewCell.h; sourceTree = "<group>"; };
+		D7569D2D2021F4E700EFB7C7 /* PPCPaperKeyTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCPaperKeyTableViewCell.m; sourceTree = "<group>"; };
+		D7569D2E2021F4E700EFB7C7 /* PPCPaperKeyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PPCPaperKeyTableViewCell.xib; sourceTree = "<group>"; };
 		D7DF54C1201B59A200701D55 /* Peercoin Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Peercoin Wallet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7DF54C4201B59A200701D55 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D7DF54C5201B59A200701D55 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -143,6 +155,7 @@
 			files = (
 				D7DF5591201F4D9D00701D55 /* LocalAuthentication.framework in Frameworks */,
 				D7DF558E201F310800701D55 /* AudioToolbox.framework in Frameworks */,
+				D7569D2A2021DB7200EFB7C7 /* JVFloatLabeledText.framework in Frameworks */,
 				D7DF5500201B79BE00701D55 /* Foundation.framework in Frameworks */,
 				D7DF54FE201B788A00701D55 /* CoreGraphics.framework in Frameworks */,
 				D7DF54FC201B786A00701D55 /* PureLayout.framework in Frameworks */,
@@ -175,6 +188,16 @@
 				D73A884D202088120022746D /* PPCPaperKeyView.xib */,
 			);
 			path = "Scroll View Element";
+			sourceTree = "<group>";
+		};
+		D7569D2B2021F4B300EFB7C7 /* Table View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D7569D2C2021F4E700EFB7C7 /* PPCPaperKeyTableViewCell.h */,
+				D7569D2D2021F4E700EFB7C7 /* PPCPaperKeyTableViewCell.m */,
+				D7569D2E2021F4E700EFB7C7 /* PPCPaperKeyTableViewCell.xib */,
+			);
+			path = "Table View Cell";
 			sourceTree = "<group>";
 		};
 		D7DF54B8201B59A200701D55 = {
@@ -238,6 +261,7 @@
 		D7DF54F8201B785B00701D55 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D7569D292021DB7200EFB7C7 /* JVFloatLabeledText.framework */,
 				D7DF5590201F4D9D00701D55 /* LocalAuthentication.framework */,
 				D7DF558D201F310800701D55 /* AudioToolbox.framework */,
 				D7DF54FF201B79BE00701D55 /* Foundation.framework */,
@@ -416,6 +440,10 @@
 				D73A8844202075D50022746D /* PPCPaperKey_2_ViewController.h */,
 				D73A8845202075D50022746D /* PPCPaperKey_2_ViewController.m */,
 				D73A8846202075D50022746D /* PPCPaperKey_2_ViewController.xib */,
+				D7569D242021D61800EFB7C7 /* PPCPaperKey_3_ViewController.h */,
+				D7569D252021D61800EFB7C7 /* PPCPaperKey_3_ViewController.m */,
+				D7569D262021D61800EFB7C7 /* PPCPaperKey_3_ViewController.xib */,
+				D7569D2B2021F4B300EFB7C7 /* Table View Cell */,
 			);
 			path = "Paper Key";
 			sourceTree = "<group>";
@@ -553,10 +581,12 @@
 				D7DF5518201BA58300701D55 /* PPCRootViewController.xib in Resources */,
 				D7DF54CE201B59A200701D55 /* Assets.xcassets in Resources */,
 				D73A8848202075D50022746D /* PPCPaperKey_2_ViewController.xib in Resources */,
+				D7569D282021D61800EFB7C7 /* PPCPaperKey_3_ViewController.xib in Resources */,
 				D7DF558C201F298E00701D55 /* PPCVirtualKeyboard.xib in Resources */,
 				D7DF5575201C91CC00701D55 /* LaunchScreen.storyboard in Resources */,
 				D7DF5531201C809700701D55 /* PPCFirstLaunchViewController.xib in Resources */,
 				D7DF557D201CA5D400701D55 /* PPCCreateNewWalletViewController.xib in Resources */,
+				D7569D302021F4E700EFB7C7 /* PPCPaperKeyTableViewCell.xib in Resources */,
 				D7DF5523201BA9AD00701D55 /* PPCIntroView.xib in Resources */,
 				D7DF559A201F631300701D55 /* PPCPaperKey_1_ViewController.xib in Resources */,
 				D7DF5584201F239000701D55 /* PPCEnterPinViewController.xib in Resources */,
@@ -588,10 +618,12 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/AFNetworking.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/PureLayout.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/JVFloatLabeledText.framework",
 			);
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/AFNetworking.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/PureLayout.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/JVFloatLabeledText.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -609,6 +641,7 @@
 				D7DF557C201CA5D400701D55 /* PPCCreateNewWalletViewController.m in Sources */,
 				D7DF5530201C809700701D55 /* PPCFirstLaunchViewController.m in Sources */,
 				D7DF5599201F631300701D55 /* PPCPaperKey_1_ViewController.m in Sources */,
+				D7569D272021D61800EFB7C7 /* PPCPaperKey_3_ViewController.m in Sources */,
 				D7DF5535201C80F100701D55 /* PPCRoundButton.m in Sources */,
 				D7DF5512201BA3DB00701D55 /* PPCNavigationController.m in Sources */,
 				D7DF5529201BCF3C00701D55 /* PPCPINView.m in Sources */,
@@ -618,6 +651,7 @@
 				D73A884C202088010022746D /* PPCPaperKeyView.m in Sources */,
 				D7DF5517201BA58300701D55 /* PPCRootViewController.m in Sources */,
 				D7DF5588201F252C00701D55 /* PPCVirtualKeyboard.m in Sources */,
+				D7569D2F2021F4E700EFB7C7 /* PPCPaperKeyTableViewCell.m in Sources */,
 				D7DF54C6201B59A200701D55 /* AppDelegate.m in Sources */,
 				D7DF550F201BA3BF00701D55 /* PPCViewController.m in Sources */,
 				D7DF551C201BA68500701D55 /* ILContainerView.m in Sources */,

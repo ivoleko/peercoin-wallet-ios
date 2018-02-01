@@ -3,3 +3,6 @@ github "AFNetworking/AFNetworking"
 
 #requires latest version of PureLayout
 github "PureLayout/PureLayout"
+
+#requires latest version of FloatLabeledTextfield
+github "jverdi/JVFloatLabeledTextField"
