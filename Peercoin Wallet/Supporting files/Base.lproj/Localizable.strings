@@ -40,6 +40,7 @@
 "Label.paperKey.step1.desc" = "Write down each word in exact order and store it in a safe place.";
 "Label.paperKey.step2.desc" = "To make sure everything was written down correctly, please enter the following words from your paper key.";
 "Label.paperKey.position" = "%ld of %ld";
+"Label.pinSet" = "PIN is set!";
 
 
 //Title
@@ -49,4 +50,4 @@
 
 
 //Placeholders
-"Placeholder.word" = "Word #%ld";
+"Placeholder.word" = "word #%ld";

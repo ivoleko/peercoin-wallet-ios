@@ -15,13 +15,21 @@
 
 @interface PPCCreateNewWalletViewController () <PPCVirtualKeyboardDelegate>
 
+@property (weak, nonatomic) IBOutlet UIView *mainView;
+@property (weak, nonatomic) IBOutlet UIView *animationHolderView;
+@property (weak, nonatomic) IBOutlet UIView *viewCheckMarkHolder;
+
 @property (weak, nonatomic) IBOutlet UILabel *labelDescription;
+@property (weak, nonatomic) IBOutlet UILabel *labelDescription2;
+@property (weak, nonatomic) IBOutlet UILabel *labelCheckMark;
+
+
 @property (weak, nonatomic) IBOutlet UIView *viewFooter;
 @property (weak, nonatomic) IBOutlet PPCPINView *pinView;
 @property (weak, nonatomic) IBOutlet UILabel *labelFooterCaution;
 @property (weak, nonatomic) IBOutlet UILabel *labelFooterExplanation;
 @property (weak, nonatomic) IBOutlet PPCVirtualKeyboard *virtualKeyboard;
-@property (weak, nonatomic) IBOutlet UIView *backgroundViewForIPhoneX;
+
 
 
 @property (nonatomic, strong) NSString *choosenPIN;
@@ -61,27 +69,25 @@
     self.title = NSLocalizedString(@"Title.setPIN", nil);
     self.labelFooterCaution.text = NSLocalizedString(@"Label.caution", nil);
     self.labelFooterExplanation.text = NSLocalizedString(@"Label.rememberPin", nil);
+    self.labelDescription.text = NSLocalizedString(@"Label.setPinDesc", nil);
+    self.labelDescription2.text = NSLocalizedString(@"Label.setPinDesc2", nil);
+
+    
     
     self.pinView.highlightCount = 0;
     self.pinView.colorNormal = kPPCColor_dark;
     self.pinView.colorHighlighted = kPPCColor_green;
     
-    self.backgroundViewForIPhoneX.backgroundColor = kPPCColor_dark;
     
  }
 
 - (void) viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:NO animated:YES];
+    
+    [UIView setAnimationsEnabled:NO];
     self.choosenPIN = nil;
-}
-
-- (void) viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-}
-
-- (void) viewDidDisappear:(BOOL)animated {
-    [super viewDidDisappear:animated];
+    [UIView setAnimationsEnabled:YES];
 }
 
 
@@ -90,10 +96,44 @@
 - (void) setChoosenPIN:(NSString *)choosenPIN {
     _choosenPIN = choosenPIN;
     if (choosenPIN == nil) {
-        self.labelDescription.text = NSLocalizedString(@"Label.setPinDesc", nil);
+        //animation
+        CGRect rect1 = self.labelDescription.frame;
+        rect1.origin.x = - self.view.bounds.size.width;
+        self.labelDescription.frame = rect1;
+        rect1.origin.x = (self.view.bounds.size.width - rect1.size.width)/2.0;
+        
+        CGRect rect2 = self.labelDescription2.frame;
+        rect2.origin.x =  self.view.bounds.size.width;
+        
+        [UIView animateWithDuration:0.35 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut | UIViewAnimationOptionBeginFromCurrentState animations:^{
+            self.labelDescription2.frame = rect2;
+            self.labelDescription.frame = rect1;
+            self.labelDescription.alpha = 1;
+            self.labelDescription2.alpha = 0;
+            
+        } completion:^(BOOL finished) {
+     
+        }];
     }
     else {
-        self.labelDescription.text = NSLocalizedString(@"Label.setPinDesc2", nil);
+        //animation
+        CGRect rect2 = self.labelDescription2.frame;
+        rect2.origin.x = self.view.bounds.size.width;
+        self.labelDescription2.frame = rect2;
+        rect2.origin.x = (self.view.bounds.size.width - rect2.size.width)/2.0;
+        
+        CGRect rect1 = self.labelDescription.frame;
+        rect1.origin.x = - self.view.bounds.size.width;
+        
+        [UIView animateWithDuration:0.35 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut | UIViewAnimationOptionBeginFromCurrentState animations:^{
+            self.labelDescription2.frame = rect2;
+            self.labelDescription.frame = rect1;
+            self.labelDescription.alpha = 0;
+            self.labelDescription2.alpha = 1;
+            
+        } completion:^(BOOL finished) {
+        
+        }];
     }
     
     [UIView animateWithDuration:0.3 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
@@ -106,11 +146,53 @@
     
   #warning need to create a wallet etc.
     
+    //hide navigation back button and destroy previous VC
+    [self.navigationItem setHidesBackButton:YES animated:YES];
+    [self cleanNavigationStackOfViewControllers];
     
-    self.canBeRemovedFromNavigationController = YES;
-    PPCPaperKey_1_ViewController *newVC = [[PPCPaperKey_1_ViewController alloc] initWithXIB];
-    newVC.delegate = self.delegate;
-    [self.navigationController pushViewController:newVC animated:YES];
+    
+    //animation
+    CGRect rectHolder = self.viewCheckMarkHolder.frame;
+    rectHolder.origin.y = self.view.bounds.size.height;
+    self.viewCheckMarkHolder.frame = rectHolder;
+    self.labelCheckMark.text = NSLocalizedString(@"Label.pinSet", nil);
+    self.labelCheckMark.textColor = kPPCColor_dark;
+    
+    self.animationHolderView.alpha = 1.0;
+    [UIView animateWithDuration:0.35 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        self.mainView.alpha = 0.0;
+    } completion:^(BOOL finished) {
+       
+    }];
+    
+    [UIView animateWithDuration:0.5 delay:0.35 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        [self.animationHolderView setNeedsLayout];
+        [self.animationHolderView layoutIfNeeded];
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:0.35 delay:0.35 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+            self.labelCheckMark.alpha = 1.0;
+        } completion:^(BOOL finished) {
+            
+        }];
+    }];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.8 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        self.canBeRemovedFromNavigationController = YES;
+        PPCPaperKey_1_ViewController *newVC = [[PPCPaperKey_1_ViewController alloc] initWithXIB];
+        newVC.delegate = self.delegate;
+        [self.navigationController pushViewController:newVC animated:YES];
+    });
+}
+
+- (void) wrongPIN {
+    [self.pinView shakeIt];
+    [self.currentEntry setString:@""];
+    self.choosenPIN = nil;
+}
+
+- (void) firstPinEntered {
+    self.choosenPIN = [NSString stringWithString:self.currentEntry];
+    [self.currentEntry setString:@""];
 }
 
 
@@ -127,8 +209,7 @@
     
     if (self.currentEntry.length == PINlenght) {
         if (self.choosenPIN == nil) {
-            self.choosenPIN = [NSString stringWithString:self.currentEntry];
-            [self.currentEntry setString:@""];
+            [self firstPinEntered];
         }
         else {
             if ([self.choosenPIN isEqualToString:self.currentEntry]) {
@@ -136,14 +217,13 @@
             }
             else {
                 //wrong PIN, repeat
-                [self.pinView shakeIt];
-                [self.currentEntry setString:@""];
-                self.choosenPIN = nil;
+                [self wrongPIN];
             }
         }
     }
     return YES;
 }
+
 - (BOOL) canUserPressBackspace {
     if (self.currentEntry.length == 0) {
         return NO;
