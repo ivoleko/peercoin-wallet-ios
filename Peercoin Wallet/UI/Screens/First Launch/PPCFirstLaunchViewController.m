@@ -10,6 +10,7 @@
 #import "PPCRoundButton.h"
 #import "PPCIntroView.h"
 #import "PPCCreateNewWalletViewController.h"
+#import "PPCRecoverWallet_1_ViewController.h"
 
 @interface PPCFirstLaunchViewController ()
 
@@ -116,6 +117,11 @@
 
 - (IBAction)pressedRecoverWallet:(id)sender {
     self.canBeRemovedFromNavigationController = YES;
+    
+    PPCRecoverWallet_1_ViewController *recover = [[PPCRecoverWallet_1_ViewController alloc] initWithXIB];
+    recover.delegate = self.delegate;
+    [self.navigationController pushViewController:recover animated:YES];
+
     
 }
 

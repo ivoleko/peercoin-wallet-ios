@@ -11,10 +11,15 @@
 
 @class PPCPaperKeyTableViewCell;
 
-@protocol PPCPaperKeyTableViewCellDelegate
+@protocol PPCPaperKeyTableViewCellDelegate <NSObject>
 
+@required
 - (BOOL) textField: (UITextField *) textField willReturnFromCell: (PPCPaperKeyTableViewCell *) cell;
 - (void) textField: (UITextField *) textField fromCell: (PPCPaperKeyTableViewCell *) cell changedText: (NSString *) text;
+
+@optional
+- (void) textField: (UITextField *) textField didBeginEditingFromCell: (PPCPaperKeyTableViewCell *) cell;
+- (void) textField: (UITextField *) textField didEndEditingFromCell: (PPCPaperKeyTableViewCell *) cell;
 
 @end
 

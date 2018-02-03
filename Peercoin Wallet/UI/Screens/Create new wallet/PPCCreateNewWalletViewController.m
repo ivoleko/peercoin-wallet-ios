@@ -72,7 +72,7 @@
     self.labelFooterExplanation.text = NSLocalizedString(@"Label.rememberPin", nil);
     self.labelDescription.text = NSLocalizedString(@"Label.setPinDesc", nil);
     self.labelDescription2.text = NSLocalizedString(@"Label.setPinDesc2", nil);
-
+    self.labelFooterCaution.textColor = kPPCColor_red;
     
     
     self.pinView.highlightCount = 0;

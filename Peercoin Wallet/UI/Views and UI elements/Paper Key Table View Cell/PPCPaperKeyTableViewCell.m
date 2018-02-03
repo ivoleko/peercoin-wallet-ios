@@ -38,4 +38,14 @@
     [self.delegate textField:textField fromCell:self changedText:textField.text];
 }
 
+- (void) textFieldDidBeginEditing:(UITextField *)textField {
+    if ([self.delegate respondsToSelector:@selector(textField: didBeginEditingFromCell:)])
+        [self.delegate textField:textField didBeginEditingFromCell:self];
+}
+
+- (void) textFieldDidEndEditing:(UITextField *)textField {
+    if ([self.delegate respondsToSelector:@selector(textField: didEndEditingFromCell:)])
+        [self.delegate textField:textField didEndEditingFromCell:self];
+}
+
 @end

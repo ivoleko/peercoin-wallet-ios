@@ -25,6 +25,7 @@
 "Button.next" = "Next";
 "Button.finish" = "Finish";
 "Button.submit" = "Submit";
+"Button.next" = "Next";
 
 
 
@@ -41,11 +42,13 @@
 "Label.paperKey.step2.desc" = "To make sure everything was written down correctly, please enter the following words from your paper key.";
 "Label.paperKey.position" = "%ld of %ld";
 "Label.pinSet" = "PIN is set!";
+"Label.recoverWallet.desc" = "To recover your wallet, you need to have valid paper key. Enter all 12 words in exact order.";
 
 
 //Title
 "Title.setPIN" = "Set PIN";
 "Title.paperKey" = "Paper Key";
+"Title.recoverWallet" = "Recover Wallet";
 
 
 

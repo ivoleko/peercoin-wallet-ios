@@ -16,6 +16,8 @@
 		D7569D2A2021DB7200EFB7C7 /* JVFloatLabeledText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7569D292021DB7200EFB7C7 /* JVFloatLabeledText.framework */; };
 		D7569D2F2021F4E700EFB7C7 /* PPCPaperKeyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7569D2D2021F4E700EFB7C7 /* PPCPaperKeyTableViewCell.m */; };
 		D7569D302021F4E700EFB7C7 /* PPCPaperKeyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7569D2E2021F4E700EFB7C7 /* PPCPaperKeyTableViewCell.xib */; };
+		D7A364FC20248A2B00ED0E5F /* PPCRecoverWallet_1_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A364FA20248A2B00ED0E5F /* PPCRecoverWallet_1_ViewController.m */; };
+		D7A364FD20248A2B00ED0E5F /* PPCRecoverWallet_1_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7A364FB20248A2B00ED0E5F /* PPCRecoverWallet_1_ViewController.xib */; };
 		D7DF54C6201B59A200701D55 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF54C5201B59A200701D55 /* AppDelegate.m */; };
 		D7DF54CE201B59A200701D55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7DF54CD201B59A200701D55 /* Assets.xcassets */; };
 		D7DF54D4201B59A200701D55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF54D3201B59A200701D55 /* main.m */; };
@@ -85,6 +87,9 @@
 		D7569D2C2021F4E700EFB7C7 /* PPCPaperKeyTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCPaperKeyTableViewCell.h; sourceTree = "<group>"; };
 		D7569D2D2021F4E700EFB7C7 /* PPCPaperKeyTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCPaperKeyTableViewCell.m; sourceTree = "<group>"; };
 		D7569D2E2021F4E700EFB7C7 /* PPCPaperKeyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PPCPaperKeyTableViewCell.xib; sourceTree = "<group>"; };
+		D7A364F920248A2B00ED0E5F /* PPCRecoverWallet_1_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCRecoverWallet_1_ViewController.h; sourceTree = "<group>"; };
+		D7A364FA20248A2B00ED0E5F /* PPCRecoverWallet_1_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCRecoverWallet_1_ViewController.m; sourceTree = "<group>"; };
+		D7A364FB20248A2B00ED0E5F /* PPCRecoverWallet_1_ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PPCRecoverWallet_1_ViewController.xib; sourceTree = "<group>"; };
 		D7DF54C1201B59A200701D55 /* Peercoin Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Peercoin Wallet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7DF54C4201B59A200701D55 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D7DF54C5201B59A200701D55 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -190,14 +195,24 @@
 			path = "Scroll View Element";
 			sourceTree = "<group>";
 		};
-		D7569D2B2021F4B300EFB7C7 /* Table View Cell */ = {
+		D7569D2B2021F4B300EFB7C7 /* Paper Key Table View Cell */ = {
 			isa = PBXGroup;
 			children = (
 				D7569D2C2021F4E700EFB7C7 /* PPCPaperKeyTableViewCell.h */,
 				D7569D2D2021F4E700EFB7C7 /* PPCPaperKeyTableViewCell.m */,
 				D7569D2E2021F4E700EFB7C7 /* PPCPaperKeyTableViewCell.xib */,
 			);
-			path = "Table View Cell";
+			path = "Paper Key Table View Cell";
+			sourceTree = "<group>";
+		};
+		D7A364F8202489B100ED0E5F /* Recover Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				D7A364F920248A2B00ED0E5F /* PPCRecoverWallet_1_ViewController.h */,
+				D7A364FA20248A2B00ED0E5F /* PPCRecoverWallet_1_ViewController.m */,
+				D7A364FB20248A2B00ED0E5F /* PPCRecoverWallet_1_ViewController.xib */,
+			);
+			path = "Recover Wallet";
 			sourceTree = "<group>";
 		};
 		D7DF54B8201B59A200701D55 = {
@@ -336,6 +351,7 @@
 		D7DF551D201BA94B00701D55 /* Views and UI elements */ = {
 			isa = PBXGroup;
 			children = (
+				D7569D2B2021F4B300EFB7C7 /* Paper Key Table View Cell */,
 				D7DF5585201F251300701D55 /* Virtual Keyboard */,
 				D7DF5532201C80D200701D55 /* Round Button */,
 				D7DF5526201BCEEE00701D55 /* PIN view */,
@@ -357,6 +373,7 @@
 		D7DF5524201BAACA00701D55 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				D7A364F8202489B100ED0E5F /* Recover Wallet */,
 				D7DF552C201C7F2500701D55 /* First Launch */,
 				D7DF5525201BAAE600701D55 /* Create new wallet */,
 				D7DF557E201F1CFD00701D55 /* Paper Key */,
@@ -443,7 +460,6 @@
 				D7569D242021D61800EFB7C7 /* PPCPaperKey_3_ViewController.h */,
 				D7569D252021D61800EFB7C7 /* PPCPaperKey_3_ViewController.m */,
 				D7569D262021D61800EFB7C7 /* PPCPaperKey_3_ViewController.xib */,
-				D7569D2B2021F4B300EFB7C7 /* Table View Cell */,
 			);
 			path = "Paper Key";
 			sourceTree = "<group>";
@@ -581,6 +597,7 @@
 				D7DF5518201BA58300701D55 /* PPCRootViewController.xib in Resources */,
 				D7DF54CE201B59A200701D55 /* Assets.xcassets in Resources */,
 				D73A8848202075D50022746D /* PPCPaperKey_2_ViewController.xib in Resources */,
+				D7A364FD20248A2B00ED0E5F /* PPCRecoverWallet_1_ViewController.xib in Resources */,
 				D7569D282021D61800EFB7C7 /* PPCPaperKey_3_ViewController.xib in Resources */,
 				D7DF558C201F298E00701D55 /* PPCVirtualKeyboard.xib in Resources */,
 				D7DF5575201C91CC00701D55 /* LaunchScreen.storyboard in Resources */,
@@ -650,6 +667,7 @@
 				D7DF5508201B7C8900701D55 /* Reachability.m in Sources */,
 				D73A884C202088010022746D /* PPCPaperKeyView.m in Sources */,
 				D7DF5517201BA58300701D55 /* PPCRootViewController.m in Sources */,
+				D7A364FC20248A2B00ED0E5F /* PPCRecoverWallet_1_ViewController.m in Sources */,
 				D7DF5588201F252C00701D55 /* PPCVirtualKeyboard.m in Sources */,
 				D7569D2F2021F4E700EFB7C7 /* PPCPaperKeyTableViewCell.m in Sources */,
 				D7DF54C6201B59A200701D55 /* AppDelegate.m in Sources */,
