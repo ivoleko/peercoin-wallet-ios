@@ -95,6 +95,8 @@
     }
     
     
+    //inset
+    self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 16, 0);
     
     [self.tableView reloadData];
 
@@ -150,6 +152,12 @@
     
     // Need to translate the bounds to account for rotation.
     keyboardBounds = [self.view convertRect:keyboardBounds toView:nil];
+    
+    if (@available(iOS 11.0, *)) {
+        UIWindow *window = UIApplication.sharedApplication.keyWindow;
+        CGFloat bottomPadding = window.safeAreaInsets.bottom;
+        keyboardBounds.size.height -= bottomPadding; //reduce safe area insets
+    }
     
     [UIView animateWithDuration:duration.doubleValue delay:0.0 options:curve.integerValue animations:^{
         self.constraintBottomFooter.constant = keyboardBounds.size.height;

@@ -373,8 +373,8 @@
 		D7DF5524201BAACA00701D55 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				D7A364F8202489B100ED0E5F /* Recover Wallet */,
 				D7DF552C201C7F2500701D55 /* First Launch */,
+				D7A364F8202489B100ED0E5F /* Recover Wallet */,
 				D7DF5525201BAAE600701D55 /* Create new wallet */,
 				D7DF557E201F1CFD00701D55 /* Paper Key */,
 				D7DF557F201F236C00701D55 /* Enter PIN */,

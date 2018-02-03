@@ -104,7 +104,7 @@
                     <rect key="frame" x="0.0" y="190" width="320" height="378"/>
                     <subviews>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="default" rowHeight="50" estimatedRowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EWU-Ys-JVO">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="292"/>
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="308"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                             <connections>
@@ -113,10 +113,10 @@
                             </connections>
                         </tableView>
                         <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HOp-OT-dxw">
-                            <rect key="frame" x="0.0" y="292" width="320" height="86"/>
+                            <rect key="frame" x="0.0" y="308" width="320" height="70"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vX9-py-57d" customClass="PPCRoundButton">
-                                    <rect key="frame" x="16" y="16" width="288" height="50"/>
+                                    <rect key="frame" x="16" y="0.0" width="288" height="50"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="50" id="Oj1-0q-SwF"/>
                                     </constraints>
@@ -130,7 +130,7 @@
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="trailing" secondItem="vX9-py-57d" secondAttribute="trailing" constant="16" id="DEe-6f-6H4"/>
-                                <constraint firstItem="vX9-py-57d" firstAttribute="top" secondItem="HOp-OT-dxw" secondAttribute="top" constant="16" id="vnc-tj-CHE"/>
+                                <constraint firstItem="vX9-py-57d" firstAttribute="top" secondItem="HOp-OT-dxw" secondAttribute="top" id="vnc-tj-CHE"/>
                                 <constraint firstAttribute="bottom" secondItem="vX9-py-57d" secondAttribute="bottom" constant="20" id="wpM-om-6UT"/>
                                 <constraint firstItem="vX9-py-57d" firstAttribute="leading" secondItem="HOp-OT-dxw" secondAttribute="leading" constant="16" id="yPx-0v-3I0"/>
                             </constraints>
@@ -148,7 +148,7 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="16A-4u-ovP" firstAttribute="top" secondItem="shA-fh-VdL" secondAttribute="bottom" id="6YW-5b-WZa"/>
                 <constraint firstItem="iEl-Lc-BlR" firstAttribute="trailing" secondItem="16A-4u-ovP" secondAttribute="trailing" id="8KN-KT-pkh"/>
