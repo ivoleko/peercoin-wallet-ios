@@ -6,14 +6,14 @@
 //  Copyright © 2018 Ivo Leko. All rights reserved.
 //
 
-#import "PPCCreateNewWalletViewController.h"
+#import "PPCSetWalletPinViewController.h"
 #import "PPCPINView.h"
 #import "PPCVirtualKeyboard.h"
 #import "PPCPaperKey_1_ViewController.h"
 
 #define PINlenght   6
 
-@interface PPCCreateNewWalletViewController () <PPCVirtualKeyboardDelegate>
+@interface PPCSetWalletPinViewController () <PPCVirtualKeyboardDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *mainView;
 @property (weak, nonatomic) IBOutlet UIView *animationHolderView;
@@ -40,7 +40,7 @@
 
 @end
 
-@implementation PPCCreateNewWalletViewController
+@implementation PPCSetWalletPinViewController
 
 #pragma mark - allocation, memory and deallocation
 

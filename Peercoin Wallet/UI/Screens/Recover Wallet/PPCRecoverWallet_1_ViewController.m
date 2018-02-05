@@ -9,7 +9,7 @@
 #import "PPCRecoverWallet_1_ViewController.h"
 #import "PPCRoundButton.h"
 #import "PPCPaperKeyTableViewCell.h"
-#import "PPCCreateNewWalletViewController.h"
+#import "PPCSetWalletPinViewController.h"
 
 @interface PPCRecoverWallet_1_ViewController () <PPCPaperKeyTableViewCellDelegate>
 
@@ -161,7 +161,7 @@
 - (IBAction)pressedNext:(id)sender {
     
 #warning check is paper key valid
-    PPCCreateNewWalletViewController *vc = [[PPCCreateNewWalletViewController alloc] initWithXIB];
+    PPCSetWalletPinViewController *vc = [[PPCSetWalletPinViewController alloc] initWithXIB];
     vc.delegate = self.delegate;
     [self.navigationController pushViewController:vc animated:YES];
 }

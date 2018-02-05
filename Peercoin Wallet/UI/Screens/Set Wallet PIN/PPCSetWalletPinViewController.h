@@ -8,7 +8,7 @@
 
 #import "PPCViewController.h"
 
-@interface PPCCreateNewWalletViewController : PPCViewController
+@interface PPCSetWalletPinViewController : PPCViewController
 
 @property (nonatomic, weak) id <PPCWalletManagementDelegate> delegate;
 

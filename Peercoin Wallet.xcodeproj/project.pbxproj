@@ -44,8 +44,8 @@
 		D7DF5563201C820C00701D55 /* UIView+ILcategory.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF5548201C820C00701D55 /* UIView+ILcategory.m */; };
 		D7DF5570201C90E700701D55 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7DF5572201C90E700701D55 /* Localizable.strings */; };
 		D7DF5575201C91CC00701D55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DF5573201C91CC00701D55 /* LaunchScreen.storyboard */; };
-		D7DF557C201CA5D400701D55 /* PPCCreateNewWalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF557A201CA5D400701D55 /* PPCCreateNewWalletViewController.m */; };
-		D7DF557D201CA5D400701D55 /* PPCCreateNewWalletViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7DF557B201CA5D400701D55 /* PPCCreateNewWalletViewController.xib */; };
+		D7DF557C201CA5D400701D55 /* PPCSetWalletPinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF557A201CA5D400701D55 /* PPCSetWalletPinViewController.m */; };
+		D7DF557D201CA5D400701D55 /* PPCSetWalletPinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7DF557B201CA5D400701D55 /* PPCSetWalletPinViewController.xib */; };
 		D7DF5583201F239000701D55 /* PPCEnterPinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF5581201F239000701D55 /* PPCEnterPinViewController.m */; };
 		D7DF5584201F239000701D55 /* PPCEnterPinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7DF5582201F239000701D55 /* PPCEnterPinViewController.xib */; };
 		D7DF5588201F252C00701D55 /* PPCVirtualKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF5587201F252C00701D55 /* PPCVirtualKeyboard.m */; };
@@ -137,9 +137,9 @@
 		D7DF5574201C91CC00701D55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Peercoin Wallet/Base.lproj/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
 		D7DF5576201C91DD00701D55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D7DF5577201C951B00701D55 /* BlocksAndProtocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlocksAndProtocols.h; sourceTree = "<group>"; };
-		D7DF5579201CA5D400701D55 /* PPCCreateNewWalletViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCCreateNewWalletViewController.h; sourceTree = "<group>"; };
-		D7DF557A201CA5D400701D55 /* PPCCreateNewWalletViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCCreateNewWalletViewController.m; sourceTree = "<group>"; };
-		D7DF557B201CA5D400701D55 /* PPCCreateNewWalletViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PPCCreateNewWalletViewController.xib; sourceTree = "<group>"; };
+		D7DF5579201CA5D400701D55 /* PPCSetWalletPinViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCSetWalletPinViewController.h; sourceTree = "<group>"; };
+		D7DF557A201CA5D400701D55 /* PPCSetWalletPinViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCSetWalletPinViewController.m; sourceTree = "<group>"; };
+		D7DF557B201CA5D400701D55 /* PPCSetWalletPinViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PPCSetWalletPinViewController.xib; sourceTree = "<group>"; };
 		D7DF5580201F239000701D55 /* PPCEnterPinViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCEnterPinViewController.h; sourceTree = "<group>"; };
 		D7DF5581201F239000701D55 /* PPCEnterPinViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCEnterPinViewController.m; sourceTree = "<group>"; };
 		D7DF5582201F239000701D55 /* PPCEnterPinViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PPCEnterPinViewController.xib; sourceTree = "<group>"; };
@@ -375,21 +375,21 @@
 			children = (
 				D7DF552C201C7F2500701D55 /* First Launch */,
 				D7A364F8202489B100ED0E5F /* Recover Wallet */,
-				D7DF5525201BAAE600701D55 /* Create new wallet */,
+				D7DF5525201BAAE600701D55 /* Set Wallet PIN */,
 				D7DF557E201F1CFD00701D55 /* Paper Key */,
 				D7DF557F201F236C00701D55 /* Enter PIN */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
 		};
-		D7DF5525201BAAE600701D55 /* Create new wallet */ = {
+		D7DF5525201BAAE600701D55 /* Set Wallet PIN */ = {
 			isa = PBXGroup;
 			children = (
-				D7DF5579201CA5D400701D55 /* PPCCreateNewWalletViewController.h */,
-				D7DF557A201CA5D400701D55 /* PPCCreateNewWalletViewController.m */,
-				D7DF557B201CA5D400701D55 /* PPCCreateNewWalletViewController.xib */,
+				D7DF5579201CA5D400701D55 /* PPCSetWalletPinViewController.h */,
+				D7DF557A201CA5D400701D55 /* PPCSetWalletPinViewController.m */,
+				D7DF557B201CA5D400701D55 /* PPCSetWalletPinViewController.xib */,
 			);
-			path = "Create new wallet";
+			path = "Set Wallet PIN";
 			sourceTree = "<group>";
 		};
 		D7DF5526201BCEEE00701D55 /* PIN view */ = {
@@ -602,7 +602,7 @@
 				D7DF558C201F298E00701D55 /* PPCVirtualKeyboard.xib in Resources */,
 				D7DF5575201C91CC00701D55 /* LaunchScreen.storyboard in Resources */,
 				D7DF5531201C809700701D55 /* PPCFirstLaunchViewController.xib in Resources */,
-				D7DF557D201CA5D400701D55 /* PPCCreateNewWalletViewController.xib in Resources */,
+				D7DF557D201CA5D400701D55 /* PPCSetWalletPinViewController.xib in Resources */,
 				D7569D302021F4E700EFB7C7 /* PPCPaperKeyTableViewCell.xib in Resources */,
 				D7DF5523201BA9AD00701D55 /* PPCIntroView.xib in Resources */,
 				D7DF559A201F631300701D55 /* PPCPaperKey_1_ViewController.xib in Resources */,
@@ -655,7 +655,7 @@
 			files = (
 				D7DF5563201C820C00701D55 /* UIView+ILcategory.m in Sources */,
 				D7DF5505201B7B5200701D55 /* PPCWebSessionManager.m in Sources */,
-				D7DF557C201CA5D400701D55 /* PPCCreateNewWalletViewController.m in Sources */,
+				D7DF557C201CA5D400701D55 /* PPCSetWalletPinViewController.m in Sources */,
 				D7DF5530201C809700701D55 /* PPCFirstLaunchViewController.m in Sources */,
 				D7DF5599201F631300701D55 /* PPCPaperKey_1_ViewController.m in Sources */,
 				D7569D272021D61800EFB7C7 /* PPCPaperKey_3_ViewController.m in Sources */,

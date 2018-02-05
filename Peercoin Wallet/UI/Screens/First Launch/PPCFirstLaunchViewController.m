@@ -9,7 +9,7 @@
 #import "PPCFirstLaunchViewController.h"
 #import "PPCRoundButton.h"
 #import "PPCIntroView.h"
-#import "PPCCreateNewWalletViewController.h"
+#import "PPCSetWalletPinViewController.h"
 #import "PPCRecoverWallet_1_ViewController.h"
 
 @interface PPCFirstLaunchViewController ()
@@ -110,7 +110,7 @@
 
 - (IBAction)pressedCreateNewWallet:(id)sender {
     self.canBeRemovedFromNavigationController = YES;
-    PPCCreateNewWalletViewController *createVC = [[PPCCreateNewWalletViewController alloc] initWithXIB];
+    PPCSetWalletPinViewController *createVC = [[PPCSetWalletPinViewController alloc] initWithXIB];
     createVC.delegate = self.delegate;
     [self.navigationController pushViewController:createVC animated:YES];
 }
