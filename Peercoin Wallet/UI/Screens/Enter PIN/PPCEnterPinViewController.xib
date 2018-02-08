@@ -39,7 +39,7 @@
                     <blurEffect style="dark"/>
                 </visualEffectView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JmG-w5-rLg" customClass="PPCIntroView">
-                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tUe-uc-Fck">
@@ -126,19 +126,18 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="lKE-8d-97L" firstAttribute="bottom" secondItem="JmG-w5-rLg" secondAttribute="bottom" id="0hP-jN-pzI"/>
+                <constraint firstAttribute="bottom" secondItem="JmG-w5-rLg" secondAttribute="bottom" id="0hP-jN-pzI"/>
                 <constraint firstItem="lKE-8d-97L" firstAttribute="bottom" secondItem="tUe-uc-Fck" secondAttribute="bottom" id="Bai-0C-ylu"/>
                 <constraint firstItem="lKE-8d-97L" firstAttribute="top" secondItem="tUe-uc-Fck" secondAttribute="top" priority="750" id="D7d-is-O4d"/>
                 <constraint firstItem="tUe-uc-Fck" firstAttribute="top" relation="greaterThanOrEqual" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="Kjo-gR-rCy"/>
                 <constraint firstItem="tUe-uc-Fck" firstAttribute="leading" secondItem="lKE-8d-97L" secondAttribute="leading" id="TOK-Zo-pnC"/>
                 <constraint firstItem="lKE-8d-97L" firstAttribute="trailing" secondItem="tUe-uc-Fck" secondAttribute="trailing" id="cim-V8-dsI"/>
-                <constraint firstItem="JmG-w5-rLg" firstAttribute="leading" secondItem="lKE-8d-97L" secondAttribute="leading" id="fHs-iR-XhS"/>
-                <constraint firstItem="JmG-w5-rLg" firstAttribute="top" secondItem="lKE-8d-97L" secondAttribute="top" priority="750" id="mLR-mQ-Z2d"/>
-                <constraint firstItem="lKE-8d-97L" firstAttribute="trailing" secondItem="JmG-w5-rLg" secondAttribute="trailing" id="sdH-Jh-MCu"/>
-                <constraint firstItem="JmG-w5-rLg" firstAttribute="top" relation="greaterThanOrEqual" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="xrE-w3-mFz"/>
+                <constraint firstItem="JmG-w5-rLg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fHs-iR-XhS"/>
+                <constraint firstAttribute="trailing" secondItem="JmG-w5-rLg" secondAttribute="trailing" id="sdH-Jh-MCu"/>
+                <constraint firstItem="JmG-w5-rLg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="xrE-w3-mFz"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="lKE-8d-97L"/>
-            <point key="canvasLocation" x="-210" y="-269"/>
+            <point key="canvasLocation" x="-182" y="-326"/>
         </view>
     </objects>
     <resources>

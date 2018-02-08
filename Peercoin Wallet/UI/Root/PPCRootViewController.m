@@ -9,6 +9,7 @@
 #import "PPCRootViewController.h"
 #import "PPCIntroView.h"
 #import "PPCFirstLaunchViewController.h"
+#import "PPCEnterPinViewController.h"
 
 
 @interface PPCRootViewController ()
@@ -39,7 +40,8 @@
     [super viewDidAppearOnce:animated];
     
     //TEST - show creation of new wallet
-    [self createOrRecoverWallet];
+    //[self createOrRecoverWallet];
+    [self showLogin];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -68,8 +70,21 @@
 
 
 - (void) showLogin {
-    //if wallet is configured, bust user needs to authentificate
     
+    //if wallet is configured, but user needs to authentificate
+    PPCEnterPinViewController *enterPinVC = [[PPCEnterPinViewController alloc] initWithXIB];
+    enterPinVC.showIntro = YES;
+    enterPinVC.translucent = NO;
+    enterPinVC.allowCancel = NO;
+    enterPinVC.allowBiometrics = YES;
+    [enterPinVC setCallback:^(NSError *error, BOOL userCanceled) {
+        [self dismissViewControllerAnimated:YES completion:^{
+            //for testing purposes
+            [self createOrRecoverWallet];
+        }];
+    }];
+    PPCNavigationController *nav = [[PPCNavigationController alloc] initWithRootViewController:enterPinVC];
+    [self presentViewController:nav animated:NO completion:nil];
 }
 
 

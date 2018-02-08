@@ -114,9 +114,16 @@
             [UIView animateWithDuration:0.7 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
                 
                 CGRect rect = self.introView.imageViewLogoText.superview.frame;
-                rect.origin.y = self.view.bounds.size.height * 0.0;
                 rect.size.width = 234.0;
                 rect.origin.x = self.view.bounds.size.width/2.0 - rect.size.width/2.0;
+
+                //find y (if it can fit)
+                CGFloat delta = self.labelEnterPin.superview.frame.origin.y + self.mainView.frame.origin.y;
+                if (delta <= self.introView.imageViewLogoText.frame.size.height * 1.5) {
+                    self.introView.alpha  = 0; //iphone 4, hide logo
+                }
+                rect.origin.y = delta/2.0 - rect.size.height/2.0 - self.introView.imageViewLogo.frame.size.height/2.0;\
+                
                 self.introView.imageViewLogoText.superview.frame = rect;
                 [self.view setNeedsLayout];
                 
@@ -196,7 +203,7 @@
     
     if (self.currentEntry.length == PINlenght) {
         //for testing, it is success
-        self.authResponseBlock(nil, NO);
+        [self callResponseBlockWithError:nil andUserCanceled:NO];
     }
     return YES;
 }
