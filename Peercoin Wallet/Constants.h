@@ -26,6 +26,7 @@
 #define kPPCColor_lightGrayBG       [UIColor colorWithRed:239.0/255.0 green:239.0/255.0 blue:239.0/255.0 alpha:1.0] // used for background
 #define kPPCColor_keyboardButton    [UIColor colorWithRed:114.0/255.0 green:114.0/255.0 blue:114.0/255.0 alpha:1.0]
 #define kPPCColor_red               [UIColor colorWithRed:209.0/255.0 green:0.0/255.0 blue:0.0/255.0 alpha:1.0]
+#define kPPCColor_grayTabBar        [UIColor colorWithRed:194.0/255.0 green:194.0/255.0 blue:194.0/255.0 alpha:1.0] // used for background
 
 
 

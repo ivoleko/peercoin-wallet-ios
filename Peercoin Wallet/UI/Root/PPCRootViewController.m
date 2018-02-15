@@ -12,9 +12,16 @@
 #import "PPCEnterPinViewController.h"
 
 
+#import "PPCOverviewViewController.h"
+#import "PPCSendViewController.h"
+#import "PPCReceiveViewController.h"
+#import "PPCSettingsViewController.h"
+
+
 @interface PPCRootViewController ()
 
 @property (weak, nonatomic) IBOutlet ILContainerView *containerView;
+@property (nonatomic, strong) UITabBarController *mainTabBarController;
 
 @end
 
@@ -55,7 +62,56 @@
 - (void) enterTheWallet {
     //called when user successfully create wallet or authentificate into existing one
     
-    //this method needs to show tab controller inside container view
+    self.mainTabBarController = nil;
+    self.containerView.childViewController = nil;
+    
+    
+    NSMutableArray *arrayOfViewControllers = [NSMutableArray arrayWithCapacity:4];
+    
+    {
+        PPCOverviewViewController *vc = [[PPCOverviewViewController alloc] initWithXIB];
+        vc.title = NSLocalizedString(@"Title.Overview", nil);
+        PPCNavigationController *nav = [[PPCNavigationController alloc] initWithRootViewController:vc];
+        nav.tabBarItem.image = [UIImage imageNamed:@"tabOverview"];
+        [arrayOfViewControllers addObject:nav];
+    }
+    {
+        PPCSendViewController *vc = [[PPCSendViewController alloc] initWithXIB];
+        vc.title = NSLocalizedString(@"Title.Send", nil);
+        PPCNavigationController *nav = [[PPCNavigationController alloc] initWithRootViewController:vc];
+        nav.tabBarItem.image = [UIImage imageNamed:@"tabSend"];
+        [arrayOfViewControllers addObject:nav];
+    }
+    {
+        PPCReceiveViewController *vc = [[PPCReceiveViewController alloc] initWithXIB];
+        vc.title = NSLocalizedString(@"Title.Receive", nil);
+        PPCNavigationController *nav = [[PPCNavigationController alloc] initWithRootViewController:vc];
+        nav.tabBarItem.image = [UIImage imageNamed:@"tabReceive"];
+        [arrayOfViewControllers addObject:nav];
+    }
+    {
+        PPCSettingsViewController *vc = [[PPCSettingsViewController alloc] initWithXIB];
+        vc.title = NSLocalizedString(@"Title.Settings", nil);
+        PPCNavigationController *nav = [[PPCNavigationController alloc] initWithRootViewController:vc];
+        nav.tabBarItem.image = [UIImage imageNamed:@"tabSettings"];
+        [arrayOfViewControllers addObject:nav];
+    }
+    
+    
+    self.mainTabBarController = [[UITabBarController alloc] init];
+    self.mainTabBarController.viewControllers = [NSArray arrayWithArray:arrayOfViewControllers];
+    self.containerView.childViewController = self.mainTabBarController;
+    self.mainTabBarController.tabBar.barStyle = UIBarStyleBlack;
+    self.mainTabBarController.tabBar.translucent = NO;
+    self.mainTabBarController.tabBar.barTintColor = kPPCColor_dark;
+    self.mainTabBarController.tabBar.tintColor = kPPCColor_green;\
+    
+
+    if (@available(iOS 10.0, *)) {
+        self.mainTabBarController.tabBar.unselectedItemTintColor = kPPCColor_grayTabBar;
+    } else {
+        // Fallback on earlier versions
+    }
     
 }
 - (void) createOrRecoverWallet {
@@ -78,9 +134,8 @@
     enterPinVC.allowCancel = NO;
     enterPinVC.allowBiometrics = YES;
     [enterPinVC setCallback:^(NSError *error, BOOL userCanceled) {
+        [self enterTheWallet];
         [self dismissViewControllerAnimated:YES completion:^{
-            //for testing purposes
-            [self createOrRecoverWallet];
         }];
     }];
     PPCNavigationController *nav = [[PPCNavigationController alloc] initWithRootViewController:enterPinVC];

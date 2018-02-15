@@ -49,6 +49,10 @@
 "Title.setPIN" = "Set PIN";
 "Title.paperKey" = "Paper Key";
 "Title.recoverWallet" = "Recover Wallet";
+"Title.Overview" = "Overview";
+"Title.Send" = "Send";
+"Title.Receive" = "Receive";
+"Title.Settings" = "Settings";
 
 
 

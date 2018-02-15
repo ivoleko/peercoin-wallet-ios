@@ -18,6 +18,14 @@
 		D7569D302021F4E700EFB7C7 /* PPCPaperKeyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7569D2E2021F4E700EFB7C7 /* PPCPaperKeyTableViewCell.xib */; };
 		D7A364FC20248A2B00ED0E5F /* PPCRecoverWallet_1_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A364FA20248A2B00ED0E5F /* PPCRecoverWallet_1_ViewController.m */; };
 		D7A364FD20248A2B00ED0E5F /* PPCRecoverWallet_1_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7A364FB20248A2B00ED0E5F /* PPCRecoverWallet_1_ViewController.xib */; };
+		D7B56CA02035819D00305D42 /* PPCOverviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B56C9E2035819D00305D42 /* PPCOverviewViewController.m */; };
+		D7B56CA12035819D00305D42 /* PPCOverviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7B56C9F2035819D00305D42 /* PPCOverviewViewController.xib */; };
+		D7B56CA5203581C500305D42 /* PPCSendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B56CA3203581C500305D42 /* PPCSendViewController.m */; };
+		D7B56CA6203581C500305D42 /* PPCSendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7B56CA4203581C500305D42 /* PPCSendViewController.xib */; };
+		D7B56CAA203581E300305D42 /* PPCReceiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B56CA8203581E300305D42 /* PPCReceiveViewController.m */; };
+		D7B56CAB203581E300305D42 /* PPCReceiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7B56CA9203581E300305D42 /* PPCReceiveViewController.xib */; };
+		D7B56CAF2035820400305D42 /* PPCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B56CAD2035820400305D42 /* PPCSettingsViewController.m */; };
+		D7B56CB02035820400305D42 /* PPCSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7B56CAE2035820400305D42 /* PPCSettingsViewController.xib */; };
 		D7DF54C6201B59A200701D55 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF54C5201B59A200701D55 /* AppDelegate.m */; };
 		D7DF54CE201B59A200701D55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7DF54CD201B59A200701D55 /* Assets.xcassets */; };
 		D7DF54D4201B59A200701D55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF54D3201B59A200701D55 /* main.m */; };
@@ -90,6 +98,18 @@
 		D7A364F920248A2B00ED0E5F /* PPCRecoverWallet_1_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCRecoverWallet_1_ViewController.h; sourceTree = "<group>"; };
 		D7A364FA20248A2B00ED0E5F /* PPCRecoverWallet_1_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCRecoverWallet_1_ViewController.m; sourceTree = "<group>"; };
 		D7A364FB20248A2B00ED0E5F /* PPCRecoverWallet_1_ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PPCRecoverWallet_1_ViewController.xib; sourceTree = "<group>"; };
+		D7B56C9D2035819D00305D42 /* PPCOverviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCOverviewViewController.h; sourceTree = "<group>"; };
+		D7B56C9E2035819D00305D42 /* PPCOverviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCOverviewViewController.m; sourceTree = "<group>"; };
+		D7B56C9F2035819D00305D42 /* PPCOverviewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PPCOverviewViewController.xib; sourceTree = "<group>"; };
+		D7B56CA2203581C500305D42 /* PPCSendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCSendViewController.h; sourceTree = "<group>"; };
+		D7B56CA3203581C500305D42 /* PPCSendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCSendViewController.m; sourceTree = "<group>"; };
+		D7B56CA4203581C500305D42 /* PPCSendViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PPCSendViewController.xib; sourceTree = "<group>"; };
+		D7B56CA7203581E300305D42 /* PPCReceiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCReceiveViewController.h; sourceTree = "<group>"; };
+		D7B56CA8203581E300305D42 /* PPCReceiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCReceiveViewController.m; sourceTree = "<group>"; };
+		D7B56CA9203581E300305D42 /* PPCReceiveViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PPCReceiveViewController.xib; sourceTree = "<group>"; };
+		D7B56CAC2035820400305D42 /* PPCSettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCSettingsViewController.h; sourceTree = "<group>"; };
+		D7B56CAD2035820400305D42 /* PPCSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCSettingsViewController.m; sourceTree = "<group>"; };
+		D7B56CAE2035820400305D42 /* PPCSettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PPCSettingsViewController.xib; sourceTree = "<group>"; };
 		D7DF54C1201B59A200701D55 /* Peercoin Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Peercoin Wallet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7DF54C4201B59A200701D55 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D7DF54C5201B59A200701D55 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -213,6 +233,46 @@
 				D7A364FB20248A2B00ED0E5F /* PPCRecoverWallet_1_ViewController.xib */,
 			);
 			path = "Recover Wallet";
+			sourceTree = "<group>";
+		};
+		D7B56C992035816000305D42 /* Overview */ = {
+			isa = PBXGroup;
+			children = (
+				D7B56C9D2035819D00305D42 /* PPCOverviewViewController.h */,
+				D7B56C9E2035819D00305D42 /* PPCOverviewViewController.m */,
+				D7B56C9F2035819D00305D42 /* PPCOverviewViewController.xib */,
+			);
+			path = Overview;
+			sourceTree = "<group>";
+		};
+		D7B56C9A2035816E00305D42 /* Send */ = {
+			isa = PBXGroup;
+			children = (
+				D7B56CA2203581C500305D42 /* PPCSendViewController.h */,
+				D7B56CA3203581C500305D42 /* PPCSendViewController.m */,
+				D7B56CA4203581C500305D42 /* PPCSendViewController.xib */,
+			);
+			path = Send;
+			sourceTree = "<group>";
+		};
+		D7B56C9B2035817200305D42 /* Receive */ = {
+			isa = PBXGroup;
+			children = (
+				D7B56CA7203581E300305D42 /* PPCReceiveViewController.h */,
+				D7B56CA8203581E300305D42 /* PPCReceiveViewController.m */,
+				D7B56CA9203581E300305D42 /* PPCReceiveViewController.xib */,
+			);
+			path = Receive;
+			sourceTree = "<group>";
+		};
+		D7B56C9C2035817900305D42 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				D7B56CAC2035820400305D42 /* PPCSettingsViewController.h */,
+				D7B56CAD2035820400305D42 /* PPCSettingsViewController.m */,
+				D7B56CAE2035820400305D42 /* PPCSettingsViewController.xib */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		D7DF54B8201B59A200701D55 = {
@@ -378,6 +438,10 @@
 				D7DF5525201BAAE600701D55 /* Set Wallet PIN */,
 				D7DF557E201F1CFD00701D55 /* Paper Key */,
 				D7DF557F201F236C00701D55 /* Enter PIN */,
+				D7B56C992035816000305D42 /* Overview */,
+				D7B56C9A2035816E00305D42 /* Send */,
+				D7B56C9B2035817200305D42 /* Receive */,
+				D7B56C9C2035817900305D42 /* Settings */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -591,15 +655,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7B56CAB203581E300305D42 /* PPCReceiveViewController.xib in Resources */,
 				D73A884E202088120022746D /* PPCPaperKeyView.xib in Resources */,
 				D7DF552B201BCF4E00701D55 /* PPCPINView.xib in Resources */,
 				D7DF5570201C90E700701D55 /* Localizable.strings in Resources */,
 				D7DF5518201BA58300701D55 /* PPCRootViewController.xib in Resources */,
+				D7B56CB02035820400305D42 /* PPCSettingsViewController.xib in Resources */,
 				D7DF54CE201B59A200701D55 /* Assets.xcassets in Resources */,
 				D73A8848202075D50022746D /* PPCPaperKey_2_ViewController.xib in Resources */,
 				D7A364FD20248A2B00ED0E5F /* PPCRecoverWallet_1_ViewController.xib in Resources */,
 				D7569D282021D61800EFB7C7 /* PPCPaperKey_3_ViewController.xib in Resources */,
+				D7B56CA6203581C500305D42 /* PPCSendViewController.xib in Resources */,
 				D7DF558C201F298E00701D55 /* PPCVirtualKeyboard.xib in Resources */,
+				D7B56CA12035819D00305D42 /* PPCOverviewViewController.xib in Resources */,
 				D7DF5575201C91CC00701D55 /* LaunchScreen.storyboard in Resources */,
 				D7DF5531201C809700701D55 /* PPCFirstLaunchViewController.xib in Resources */,
 				D7DF557D201CA5D400701D55 /* PPCSetWalletPinViewController.xib in Resources */,
@@ -658,14 +726,17 @@
 				D7DF557C201CA5D400701D55 /* PPCSetWalletPinViewController.m in Sources */,
 				D7DF5530201C809700701D55 /* PPCFirstLaunchViewController.m in Sources */,
 				D7DF5599201F631300701D55 /* PPCPaperKey_1_ViewController.m in Sources */,
+				D7B56CAF2035820400305D42 /* PPCSettingsViewController.m in Sources */,
 				D7569D272021D61800EFB7C7 /* PPCPaperKey_3_ViewController.m in Sources */,
 				D7DF5535201C80F100701D55 /* PPCRoundButton.m in Sources */,
+				D7B56CA02035819D00305D42 /* PPCOverviewViewController.m in Sources */,
 				D7DF5512201BA3DB00701D55 /* PPCNavigationController.m in Sources */,
 				D7DF5529201BCF3C00701D55 /* PPCPINView.m in Sources */,
 				D73A8847202075D50022746D /* PPCPaperKey_2_ViewController.m in Sources */,
 				D7DF54D4201B59A200701D55 /* main.m in Sources */,
 				D7DF5508201B7C8900701D55 /* Reachability.m in Sources */,
 				D73A884C202088010022746D /* PPCPaperKeyView.m in Sources */,
+				D7B56CA5203581C500305D42 /* PPCSendViewController.m in Sources */,
 				D7DF5517201BA58300701D55 /* PPCRootViewController.m in Sources */,
 				D7A364FC20248A2B00ED0E5F /* PPCRecoverWallet_1_ViewController.m in Sources */,
 				D7DF5588201F252C00701D55 /* PPCVirtualKeyboard.m in Sources */,
@@ -673,6 +744,7 @@
 				D7DF54C6201B59A200701D55 /* AppDelegate.m in Sources */,
 				D7DF550F201BA3BF00701D55 /* PPCViewController.m in Sources */,
 				D7DF551C201BA68500701D55 /* ILContainerView.m in Sources */,
+				D7B56CAA203581E300305D42 /* PPCReceiveViewController.m in Sources */,
 				D7DF5521201BA99A00701D55 /* PPCIntroView.m in Sources */,
 				D7DF5583201F239000701D55 /* PPCEnterPinViewController.m in Sources */,
 			);
