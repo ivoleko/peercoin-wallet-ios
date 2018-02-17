@@ -8,15 +8,46 @@
 
 #import "PPCSettingsViewController.h"
 
-@interface PPCSettingsViewController ()
+#define cellIdentifier  @"SettingsCellIdentifier"
+typedef enum {
+    SettingsType_SecurityCenter = 0,
+    SettingsType_ImportWallet,
+    SettingsType_RecoverWallet,
+    SettingsType_DisplayCurrency,
+    SettingsType_DateFormat,
+    SettingsType_About,
+    SettingsType_Help,
+    SettingsType_RateThisApp
+} SettingsType;
+
+
+
+@interface PPCSettingsViewController () <UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, strong) NSArray <NSArray *> *arrayOfCategories;
+@property (nonatomic, strong, readonly) NSDictionary *cellData;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
 @implementation PPCSettingsViewController
 
+#pragma mark - viewLifecycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    self.tableView.backgroundColor = kPPCColor_lightGrayBG;
+    
+    //load cell order data
+    NSMutableArray *arrayM = [NSMutableArray array];
+    [arrayM addObject:@[@(SettingsType_SecurityCenter)]];
+    [arrayM addObject:@[@(SettingsType_ImportWallet), @(SettingsType_RecoverWallet)]];
+    [arrayM addObject:@[@(SettingsType_DisplayCurrency), @(SettingsType_DateFormat)]];
+    [arrayM addObject:@[@(SettingsType_About), @(SettingsType_Help), @(SettingsType_RateThisApp)]];
+    self.arrayOfCategories = [NSArray arrayWithArray:arrayM];
+    
+    [self loadCellData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +55,113 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+#pragma mark - private
+
+- (void) loadCellData {
+    _cellData = @{
+                  @(SettingsType_SecurityCenter):@{
+                          @"title": @"Settings.SecurityCenter",
+                          @"imageName": @"settingsSecurityCenter",
+                          @"showArrow": @(YES)
+                          },
+                  @(SettingsType_ImportWallet):@{
+                          @"title": @"Settings.ImportWallet",
+                          @"imageName": @"settingsImportWallet",
+                          @"showArrow": @(YES)
+                          },
+                  @(SettingsType_RecoverWallet):@{
+                          @"title": @"Settings.RecoverWallet",
+                          @"imageName": @"settingsRecoverWallet",
+                          @"showArrow": @(YES)
+                          },
+                  @(SettingsType_DisplayCurrency):@{
+                          @"title": @"Settings.DisplayCurrency",
+                          @"imageName": @"settingsCurrency",
+                          @"showArrow": @(NO)
+                          },
+                  @(SettingsType_DateFormat):@{
+                          @"title": @"Settings.DateFormat",
+                          @"imageName": @"settingsDateFormat",
+                          @"showArrow": @(NO)
+                          },
+                  @(SettingsType_About):@{
+                          @"title": @"Settings.About",
+                          @"imageName": @"settingsAbout",
+                          @"showArrow": @(YES)
+                          },
+                  @(SettingsType_Help):@{
+                          @"title": @"Settings.Help",
+                          @"imageName": @"settingsHelp",
+                          @"showArrow": @(YES)
+                          },
+                  @(SettingsType_RateThisApp):@{
+                          @"title": @"Settings.RateThisApp",
+                          @"imageName": @"settingsRate",
+                          @"showArrow": @(NO)
+                          }
+                  };
 }
-*/
+
+
+
+#pragma mark - tableView
+
+- (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView {
+    return self.arrayOfCategories.count;
+}
+
+
+- (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return self.tableView.rowHeight;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    NSArray *arrayOfCells = self.arrayOfCategories[section];
+    return arrayOfCells.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UITableViewCell *cell = (UITableViewCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    
+    if(cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellIdentifier];
+        cell.textLabel.font = [cell.textLabel.font fontWithSize:16];
+    }
+    
+    SettingsType type = (SettingsType)[self.arrayOfCategories[indexPath.section][indexPath.row] integerValue];
+    cell.imageView.image = [UIImage imageNamed: [self.cellData[@(type)] objectForKey:@"imageName"]];
+    cell.textLabel.text = NSLocalizedString([self.cellData[@(type)] objectForKey:@"title"], nil);
+    
+    
+    if ([[self.cellData[@(type)] objectForKey:@"showArrow"] boolValue])
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    else
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    
+    
+    if (type == SettingsType_DisplayCurrency) {
+#warning for testing purposes
+        cell.detailTextLabel.text = @"USD";
+    }
+    
+    if (type == SettingsType_DateFormat) {
+#warning for testing purposes
+        cell.detailTextLabel.text = @"DD Mon YYYY";
+    }
+
+    
+    return cell;
+}
+
+- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+}
+
+
+
+
 
 @end

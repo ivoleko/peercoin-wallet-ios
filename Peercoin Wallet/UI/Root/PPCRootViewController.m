@@ -133,6 +133,8 @@
     enterPinVC.translucent = NO;
     enterPinVC.allowCancel = NO;
     enterPinVC.allowBiometrics = YES;
+    enterPinVC.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+
     [enterPinVC setCallback:^(NSError *error, BOOL userCanceled) {
         [self enterTheWallet];
         [self dismissViewControllerAnimated:YES completion:^{
@@ -140,6 +142,7 @@
     }];
     PPCNavigationController *nav = [[PPCNavigationController alloc] initWithRootViewController:enterPinVC];
     [self presentViewController:nav animated:NO completion:nil];
+
 }
 
 

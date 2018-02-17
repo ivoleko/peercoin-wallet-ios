@@ -55,6 +55,18 @@
 "Title.Settings" = "Settings";
 
 
+//Settings
+"Settings.SecurityCenter" = "Security Center";
+"Settings.ImportWallet" = "Import Wallet";
+"Settings.RecoverWallet" = "Start/Recover Another Wallet";
+"Settings.DisplayCurrency" = "Display Currency";
+"Settings.DateFormat" = "Date Format";
+"Settings.About" = "About";
+"Settings.Help" = "Help";
+"Settings.RateThisApp" = "Rate This App";
+
+
+
 
 //Placeholders
 "Placeholder.word" = "word #%ld";
