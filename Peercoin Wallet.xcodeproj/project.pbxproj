@@ -26,6 +26,7 @@
 		D7B56CAB203581E300305D42 /* PPCReceiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7B56CA9203581E300305D42 /* PPCReceiveViewController.xib */; };
 		D7B56CAF2035820400305D42 /* PPCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B56CAD2035820400305D42 /* PPCSettingsViewController.m */; };
 		D7B56CB02035820400305D42 /* PPCSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7B56CAE2035820400305D42 /* PPCSettingsViewController.xib */; };
+		D7DB3BF42040518B001A80EB /* PPCUserSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DB3BF32040518B001A80EB /* PPCUserSettings.m */; };
 		D7DF54C6201B59A200701D55 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF54C5201B59A200701D55 /* AppDelegate.m */; };
 		D7DF54CE201B59A200701D55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7DF54CD201B59A200701D55 /* Assets.xcassets */; };
 		D7DF54D4201B59A200701D55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF54D3201B59A200701D55 /* main.m */; };
@@ -62,6 +63,8 @@
 		D7DF5591201F4D9D00701D55 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7DF5590201F4D9D00701D55 /* LocalAuthentication.framework */; };
 		D7DF5599201F631300701D55 /* PPCPaperKey_1_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF5597201F631300701D55 /* PPCPaperKey_1_ViewController.m */; };
 		D7DF559A201F631300701D55 /* PPCPaperKey_1_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7DF5598201F631300701D55 /* PPCPaperKey_1_ViewController.xib */; };
+		D7E6F6762040D1E200BB3A4A /* PPCDateFormatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E6F6742040D1E200BB3A4A /* PPCDateFormatViewController.m */; };
+		D7E6F6772040D1E200BB3A4A /* PPCDateFormatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7E6F6752040D1E200BB3A4A /* PPCDateFormatViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +113,8 @@
 		D7B56CAC2035820400305D42 /* PPCSettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCSettingsViewController.h; sourceTree = "<group>"; };
 		D7B56CAD2035820400305D42 /* PPCSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCSettingsViewController.m; sourceTree = "<group>"; };
 		D7B56CAE2035820400305D42 /* PPCSettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PPCSettingsViewController.xib; sourceTree = "<group>"; };
+		D7DB3BF22040518B001A80EB /* PPCUserSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCUserSettings.h; sourceTree = "<group>"; };
+		D7DB3BF32040518B001A80EB /* PPCUserSettings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCUserSettings.m; sourceTree = "<group>"; };
 		D7DF54C1201B59A200701D55 /* Peercoin Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Peercoin Wallet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7DF54C4201B59A200701D55 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D7DF54C5201B59A200701D55 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -171,6 +176,9 @@
 		D7DF5596201F631300701D55 /* PPCPaperKey_1_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCPaperKey_1_ViewController.h; sourceTree = "<group>"; };
 		D7DF5597201F631300701D55 /* PPCPaperKey_1_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCPaperKey_1_ViewController.m; sourceTree = "<group>"; };
 		D7DF5598201F631300701D55 /* PPCPaperKey_1_ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PPCPaperKey_1_ViewController.xib; sourceTree = "<group>"; };
+		D7E6F6732040D1E200BB3A4A /* PPCDateFormatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCDateFormatViewController.h; sourceTree = "<group>"; };
+		D7E6F6742040D1E200BB3A4A /* PPCDateFormatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCDateFormatViewController.m; sourceTree = "<group>"; };
+		D7E6F6752040D1E200BB3A4A /* PPCDateFormatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PPCDateFormatViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,11 +276,21 @@
 		D7B56C9C2035817900305D42 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				D7E6F66F2040D16000BB3A4A /* Date Format */,
 				D7B56CAC2035820400305D42 /* PPCSettingsViewController.h */,
 				D7B56CAD2035820400305D42 /* PPCSettingsViewController.m */,
 				D7B56CAE2035820400305D42 /* PPCSettingsViewController.xib */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		D7DB3BF120405156001A80EB /* User Settings */ = {
+			isa = PBXGroup;
+			children = (
+				D7DB3BF22040518B001A80EB /* PPCUserSettings.h */,
+				D7DB3BF32040518B001A80EB /* PPCUserSettings.m */,
+			);
+			path = "User Settings";
 			sourceTree = "<group>";
 		};
 		D7DF54B8201B59A200701D55 = {
@@ -373,6 +391,7 @@
 		D7DF550A201BA38200701D55 /* Managers and singletons */ = {
 			isa = PBXGroup;
 			children = (
+				D7DB3BF120405156001A80EB /* User Settings */,
 				D7DF5502201B7B0700701D55 /* Web Session Manager */,
 			);
 			path = "Managers and singletons";
@@ -548,6 +567,16 @@
 			path = "Virtual Keyboard";
 			sourceTree = "<group>";
 		};
+		D7E6F66F2040D16000BB3A4A /* Date Format */ = {
+			isa = PBXGroup;
+			children = (
+				D7E6F6732040D1E200BB3A4A /* PPCDateFormatViewController.h */,
+				D7E6F6742040D1E200BB3A4A /* PPCDateFormatViewController.m */,
+				D7E6F6752040D1E200BB3A4A /* PPCDateFormatViewController.xib */,
+			);
+			path = "Date Format";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -661,6 +690,7 @@
 				D7DF5570201C90E700701D55 /* Localizable.strings in Resources */,
 				D7DF5518201BA58300701D55 /* PPCRootViewController.xib in Resources */,
 				D7B56CB02035820400305D42 /* PPCSettingsViewController.xib in Resources */,
+				D7E6F6772040D1E200BB3A4A /* PPCDateFormatViewController.xib in Resources */,
 				D7DF54CE201B59A200701D55 /* Assets.xcassets in Resources */,
 				D73A8848202075D50022746D /* PPCPaperKey_2_ViewController.xib in Resources */,
 				D7A364FD20248A2B00ED0E5F /* PPCRecoverWallet_1_ViewController.xib in Resources */,
@@ -726,6 +756,7 @@
 				D7DF557C201CA5D400701D55 /* PPCSetWalletPinViewController.m in Sources */,
 				D7DF5530201C809700701D55 /* PPCFirstLaunchViewController.m in Sources */,
 				D7DF5599201F631300701D55 /* PPCPaperKey_1_ViewController.m in Sources */,
+				D7E6F6762040D1E200BB3A4A /* PPCDateFormatViewController.m in Sources */,
 				D7B56CAF2035820400305D42 /* PPCSettingsViewController.m in Sources */,
 				D7569D272021D61800EFB7C7 /* PPCPaperKey_3_ViewController.m in Sources */,
 				D7DF5535201C80F100701D55 /* PPCRoundButton.m in Sources */,
@@ -736,6 +767,7 @@
 				D7DF54D4201B59A200701D55 /* main.m in Sources */,
 				D7DF5508201B7C8900701D55 /* Reachability.m in Sources */,
 				D73A884C202088010022746D /* PPCPaperKeyView.m in Sources */,
+				D7DB3BF42040518B001A80EB /* PPCUserSettings.m in Sources */,
 				D7B56CA5203581C500305D42 /* PPCSendViewController.m in Sources */,
 				D7DF5517201BA58300701D55 /* PPCRootViewController.m in Sources */,
 				D7A364FC20248A2B00ED0E5F /* PPCRecoverWallet_1_ViewController.m in Sources */,

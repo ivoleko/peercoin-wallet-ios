@@ -7,6 +7,7 @@
 //
 
 #import "PPCSettingsViewController.h"
+#import "PPCDateFormatViewController.h"
 
 #define cellIdentifier  @"SettingsCellIdentifier"
 typedef enum {
@@ -53,6 +54,23 @@ typedef enum {
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void) viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    //update selected cell
+    NSIndexPath *indexPathForSelectedRow = self.tableView.indexPathForSelectedRow;
+    if (indexPathForSelectedRow) {
+        [self updateCell:[self.tableView cellForRowAtIndexPath:indexPathForSelectedRow] forIndexPath:indexPathForSelectedRow];
+    }
+}
+
+- (void) viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    //deselect animation
+    [self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:YES];
 }
 
 
@@ -130,7 +148,13 @@ typedef enum {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellIdentifier];
         cell.textLabel.font = [cell.textLabel.font fontWithSize:16];
     }
+    [self updateCell:cell forIndexPath:indexPath];
     
+    return cell;
+}
+
+
+- (void) updateCell: (UITableViewCell *)cell forIndexPath: (NSIndexPath *) indexPath {
     SettingsType type = (SettingsType)[self.arrayOfCategories[indexPath.section][indexPath.row] integerValue];
     cell.imageView.image = [UIImage imageNamed: [self.cellData[@(type)] objectForKey:@"imageName"]];
     cell.textLabel.text = NSLocalizedString([self.cellData[@(type)] objectForKey:@"title"], nil);
@@ -148,16 +172,26 @@ typedef enum {
     }
     
     if (type == SettingsType_DateFormat) {
-#warning for testing purposes
-        cell.detailTextLabel.text = @"DD Mon YYYY";
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        dateFormatter.dateStyle = [[PPCUserSettings shared] dateFormatterStyle];
+        cell.detailTextLabel.text = [dateFormatter stringFromDate:[NSDate date]];
     }
-
-    
-    return cell;
 }
+
 
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    SettingsType type = (SettingsType)[self.arrayOfCategories[indexPath.section][indexPath.row] integerValue];
+    
+    switch (type) {
+        case SettingsType_DateFormat: {
+            PPCDateFormatViewController *vc = [[PPCDateFormatViewController alloc] initWithXIB];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        default:
+            break;
+    }
 }
 
 

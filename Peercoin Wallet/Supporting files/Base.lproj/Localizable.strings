@@ -53,6 +53,7 @@
 "Title.Send" = "Send";
 "Title.Receive" = "Receive";
 "Title.Settings" = "Settings";
+"Title.DateFormat" = "Date Format";
 
 
 //Settings
