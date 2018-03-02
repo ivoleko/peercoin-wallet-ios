@@ -8,6 +8,7 @@
 
 #import "PPCSettingsViewController.h"
 #import "PPCDateFormatViewController.h"
+#import "PPCDisplayCurrencyViewController.h"
 
 #define cellIdentifier  @"SettingsCellIdentifier"
 typedef enum {
@@ -167,8 +168,7 @@ typedef enum {
     
     
     if (type == SettingsType_DisplayCurrency) {
-#warning for testing purposes
-        cell.detailTextLabel.text = @"USD";
+        cell.detailTextLabel.text = [[[PPCUserSettings shared] currency] code];
     }
     
     if (type == SettingsType_DateFormat) {
@@ -186,6 +186,11 @@ typedef enum {
     switch (type) {
         case SettingsType_DateFormat: {
             PPCDateFormatViewController *vc = [[PPCDateFormatViewController alloc] initWithXIB];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case SettingsType_DisplayCurrency: {
+            PPCDisplayCurrencyViewController *vc = [[PPCDisplayCurrencyViewController alloc] initWithXIB];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }

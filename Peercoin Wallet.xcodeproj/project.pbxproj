@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D70D11B62042E30F002BFE7F /* PPCWalletManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D70D11B52042E30F002BFE7F /* PPCWalletManager.m */; };
+		D70D11BA2042E322002BFE7F /* PPCWallet.m in Sources */ = {isa = PBXBuildFile; fileRef = D70D11B92042E322002BFE7F /* PPCWallet.m */; };
+		D70D11BE2042E587002BFE7F /* PPCWalletSeed.m in Sources */ = {isa = PBXBuildFile; fileRef = D70D11BD2042E587002BFE7F /* PPCWalletSeed.m */; };
+		D70D11C22042E8FA002BFE7F /* PPCAmount.m in Sources */ = {isa = PBXBuildFile; fileRef = D70D11C12042E8FA002BFE7F /* PPCAmount.m */; };
+		D70D11C52042F558002BFE7F /* PPCAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = D70D11C42042F558002BFE7F /* PPCAddress.m */; };
+		D70D11C82042F60A002BFE7F /* PPCTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = D70D11C72042F60A002BFE7F /* PPCTransaction.m */; };
+		D70D11CC2042FC89002BFE7F /* PPCCurrencyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D70D11CB2042FC89002BFE7F /* PPCCurrencyManager.m */; };
 		D73A8847202075D50022746D /* PPCPaperKey_2_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D73A8845202075D50022746D /* PPCPaperKey_2_ViewController.m */; };
 		D73A8848202075D50022746D /* PPCPaperKey_2_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D73A8846202075D50022746D /* PPCPaperKey_2_ViewController.xib */; };
 		D73A884C202088010022746D /* PPCPaperKeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = D73A884B202088010022746D /* PPCPaperKeyView.m */; };
@@ -65,6 +72,10 @@
 		D7DF559A201F631300701D55 /* PPCPaperKey_1_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7DF5598201F631300701D55 /* PPCPaperKey_1_ViewController.xib */; };
 		D7E6F6762040D1E200BB3A4A /* PPCDateFormatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E6F6742040D1E200BB3A4A /* PPCDateFormatViewController.m */; };
 		D7E6F6772040D1E200BB3A4A /* PPCDateFormatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7E6F6752040D1E200BB3A4A /* PPCDateFormatViewController.xib */; };
+		D7E6F67C20419FBA00BB3A4A /* PPCDisplayCurrencyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E6F67A20419FBA00BB3A4A /* PPCDisplayCurrencyViewController.m */; };
+		D7E6F67D20419FBA00BB3A4A /* PPCDisplayCurrencyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7E6F67B20419FBA00BB3A4A /* PPCDisplayCurrencyViewController.xib */; };
+		D7E6F67F2041AAF500BB3A4A /* Common-Currency.json in Resources */ = {isa = PBXBuildFile; fileRef = D7E6F67E2041AAF500BB3A4A /* Common-Currency.json */; };
+		D7E6F6832041ABBA00BB3A4A /* PPCCurrency.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E6F6822041ABBA00BB3A4A /* PPCCurrency.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +96,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D70D11B42042E30F002BFE7F /* PPCWalletManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCWalletManager.h; sourceTree = "<group>"; };
+		D70D11B52042E30F002BFE7F /* PPCWalletManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCWalletManager.m; sourceTree = "<group>"; };
+		D70D11B82042E322002BFE7F /* PPCWallet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCWallet.h; sourceTree = "<group>"; };
+		D70D11B92042E322002BFE7F /* PPCWallet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCWallet.m; sourceTree = "<group>"; };
+		D70D11BC2042E587002BFE7F /* PPCWalletSeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCWalletSeed.h; sourceTree = "<group>"; };
+		D70D11BD2042E587002BFE7F /* PPCWalletSeed.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCWalletSeed.m; sourceTree = "<group>"; };
+		D70D11C02042E8FA002BFE7F /* PPCAmount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCAmount.h; sourceTree = "<group>"; };
+		D70D11C12042E8FA002BFE7F /* PPCAmount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCAmount.m; sourceTree = "<group>"; };
+		D70D11C32042F558002BFE7F /* PPCAddress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCAddress.h; sourceTree = "<group>"; };
+		D70D11C42042F558002BFE7F /* PPCAddress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCAddress.m; sourceTree = "<group>"; };
+		D70D11C62042F60A002BFE7F /* PPCTransaction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCTransaction.h; sourceTree = "<group>"; };
+		D70D11C72042F60A002BFE7F /* PPCTransaction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCTransaction.m; sourceTree = "<group>"; };
+		D70D11CA2042FC89002BFE7F /* PPCCurrencyManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCCurrencyManager.h; sourceTree = "<group>"; };
+		D70D11CB2042FC89002BFE7F /* PPCCurrencyManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCCurrencyManager.m; sourceTree = "<group>"; };
 		D73A8844202075D50022746D /* PPCPaperKey_2_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCPaperKey_2_ViewController.h; sourceTree = "<group>"; };
 		D73A8845202075D50022746D /* PPCPaperKey_2_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCPaperKey_2_ViewController.m; sourceTree = "<group>"; };
 		D73A8846202075D50022746D /* PPCPaperKey_2_ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PPCPaperKey_2_ViewController.xib; sourceTree = "<group>"; };
@@ -179,6 +204,12 @@
 		D7E6F6732040D1E200BB3A4A /* PPCDateFormatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCDateFormatViewController.h; sourceTree = "<group>"; };
 		D7E6F6742040D1E200BB3A4A /* PPCDateFormatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCDateFormatViewController.m; sourceTree = "<group>"; };
 		D7E6F6752040D1E200BB3A4A /* PPCDateFormatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PPCDateFormatViewController.xib; sourceTree = "<group>"; };
+		D7E6F67920419FBA00BB3A4A /* PPCDisplayCurrencyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCDisplayCurrencyViewController.h; sourceTree = "<group>"; };
+		D7E6F67A20419FBA00BB3A4A /* PPCDisplayCurrencyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCDisplayCurrencyViewController.m; sourceTree = "<group>"; };
+		D7E6F67B20419FBA00BB3A4A /* PPCDisplayCurrencyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PPCDisplayCurrencyViewController.xib; sourceTree = "<group>"; };
+		D7E6F67E2041AAF500BB3A4A /* Common-Currency.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Common-Currency.json"; sourceTree = "<group>"; };
+		D7E6F6812041ABBA00BB3A4A /* PPCCurrency.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCCurrency.h; sourceTree = "<group>"; };
+		D7E6F6822041ABBA00BB3A4A /* PPCCurrency.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCCurrency.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +244,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D70D11B32042E2EF002BFE7F /* Wallet Manager */ = {
+			isa = PBXGroup;
+			children = (
+				D70D11B42042E30F002BFE7F /* PPCWalletManager.h */,
+				D70D11B52042E30F002BFE7F /* PPCWalletManager.m */,
+			);
+			path = "Wallet Manager";
+			sourceTree = "<group>";
+		};
+		D70D11B72042E316002BFE7F /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				D70D11B82042E322002BFE7F /* PPCWallet.h */,
+				D70D11B92042E322002BFE7F /* PPCWallet.m */,
+				D70D11C02042E8FA002BFE7F /* PPCAmount.h */,
+				D70D11C12042E8FA002BFE7F /* PPCAmount.m */,
+				D70D11C32042F558002BFE7F /* PPCAddress.h */,
+				D70D11C42042F558002BFE7F /* PPCAddress.m */,
+				D70D11C62042F60A002BFE7F /* PPCTransaction.h */,
+				D70D11C72042F60A002BFE7F /* PPCTransaction.m */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		D70D11BB2042E558002BFE7F /* Seed */ = {
+			isa = PBXGroup;
+			children = (
+				D70D11BC2042E587002BFE7F /* PPCWalletSeed.h */,
+				D70D11BD2042E587002BFE7F /* PPCWalletSeed.m */,
+			);
+			path = Seed;
+			sourceTree = "<group>";
+		};
+		D70D11C92042FC61002BFE7F /* Currency Converter and Formatter */ = {
+			isa = PBXGroup;
+			children = (
+				D70D11CA2042FC89002BFE7F /* PPCCurrencyManager.h */,
+				D70D11CB2042FC89002BFE7F /* PPCCurrencyManager.m */,
+			);
+			path = "Currency Converter and Formatter";
+			sourceTree = "<group>";
+		};
 		D73A8849202087E80022746D /* Scroll View Element */ = {
 			isa = PBXGroup;
 			children = (
@@ -276,6 +349,7 @@
 		D7B56C9C2035817900305D42 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				D7E6F67820419F8C00BB3A4A /* Currency */,
 				D7E6F66F2040D16000BB3A4A /* Date Format */,
 				D7B56CAC2035820400305D42 /* PPCSettingsViewController.h */,
 				D7B56CAD2035820400305D42 /* PPCSettingsViewController.m */,
@@ -322,6 +396,7 @@
 				D7DF54F7201B767D00701D55 /* PrefixHeader.pch */,
 				D7DF54C4201B59A200701D55 /* AppDelegate.h */,
 				D7DF54C5201B59A200701D55 /* AppDelegate.m */,
+				D7E6F6802041ABA500BB3A4A /* Models */,
 				D7DF5509201BA35100701D55 /* UI */,
 				D7DF550A201BA38200701D55 /* Managers and singletons */,
 				D7DF5536201C816A00701D55 /* IL categories */,
@@ -391,6 +466,8 @@
 		D7DF550A201BA38200701D55 /* Managers and singletons */ = {
 			isa = PBXGroup;
 			children = (
+				D70D11C92042FC61002BFE7F /* Currency Converter and Formatter */,
+				D70D11B32042E2EF002BFE7F /* Wallet Manager */,
 				D7DB3BF120405156001A80EB /* User Settings */,
 				D7DF5502201B7B0700701D55 /* Web Session Manager */,
 			);
@@ -524,6 +601,7 @@
 		D7DF556D201C90B300701D55 /* Supporting files */ = {
 			isa = PBXGroup;
 			children = (
+				D7E6F67E2041AAF500BB3A4A /* Common-Currency.json */,
 				D7DF5573201C91CC00701D55 /* LaunchScreen.storyboard */,
 				D7DF5572201C90E700701D55 /* Localizable.strings */,
 			);
@@ -575,6 +653,35 @@
 				D7E6F6752040D1E200BB3A4A /* PPCDateFormatViewController.xib */,
 			);
 			path = "Date Format";
+			sourceTree = "<group>";
+		};
+		D7E6F67820419F8C00BB3A4A /* Currency */ = {
+			isa = PBXGroup;
+			children = (
+				D7E6F67920419FBA00BB3A4A /* PPCDisplayCurrencyViewController.h */,
+				D7E6F67A20419FBA00BB3A4A /* PPCDisplayCurrencyViewController.m */,
+				D7E6F67B20419FBA00BB3A4A /* PPCDisplayCurrencyViewController.xib */,
+			);
+			path = Currency;
+			sourceTree = "<group>";
+		};
+		D7E6F6802041ABA500BB3A4A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D70D11BB2042E558002BFE7F /* Seed */,
+				D70D11B72042E316002BFE7F /* Wallet */,
+				D7E6F6842041F38700BB3A4A /* Currency */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D7E6F6842041F38700BB3A4A /* Currency */ = {
+			isa = PBXGroup;
+			children = (
+				D7E6F6812041ABBA00BB3A4A /* PPCCurrency.h */,
+				D7E6F6822041ABBA00BB3A4A /* PPCCurrency.m */,
+			);
+			path = Currency;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -690,6 +797,7 @@
 				D7DF5570201C90E700701D55 /* Localizable.strings in Resources */,
 				D7DF5518201BA58300701D55 /* PPCRootViewController.xib in Resources */,
 				D7B56CB02035820400305D42 /* PPCSettingsViewController.xib in Resources */,
+				D7E6F67D20419FBA00BB3A4A /* PPCDisplayCurrencyViewController.xib in Resources */,
 				D7E6F6772040D1E200BB3A4A /* PPCDateFormatViewController.xib in Resources */,
 				D7DF54CE201B59A200701D55 /* Assets.xcassets in Resources */,
 				D73A8848202075D50022746D /* PPCPaperKey_2_ViewController.xib in Resources */,
@@ -705,6 +813,7 @@
 				D7DF5523201BA9AD00701D55 /* PPCIntroView.xib in Resources */,
 				D7DF559A201F631300701D55 /* PPCPaperKey_1_ViewController.xib in Resources */,
 				D7DF5584201F239000701D55 /* PPCEnterPinViewController.xib in Resources */,
+				D7E6F67F2041AAF500BB3A4A /* Common-Currency.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -751,7 +860,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D70D11C82042F60A002BFE7F /* PPCTransaction.m in Sources */,
 				D7DF5563201C820C00701D55 /* UIView+ILcategory.m in Sources */,
+				D70D11BE2042E587002BFE7F /* PPCWalletSeed.m in Sources */,
 				D7DF5505201B7B5200701D55 /* PPCWebSessionManager.m in Sources */,
 				D7DF557C201CA5D400701D55 /* PPCSetWalletPinViewController.m in Sources */,
 				D7DF5530201C809700701D55 /* PPCFirstLaunchViewController.m in Sources */,
@@ -767,12 +878,19 @@
 				D7DF54D4201B59A200701D55 /* main.m in Sources */,
 				D7DF5508201B7C8900701D55 /* Reachability.m in Sources */,
 				D73A884C202088010022746D /* PPCPaperKeyView.m in Sources */,
+				D70D11C52042F558002BFE7F /* PPCAddress.m in Sources */,
 				D7DB3BF42040518B001A80EB /* PPCUserSettings.m in Sources */,
 				D7B56CA5203581C500305D42 /* PPCSendViewController.m in Sources */,
+				D70D11BA2042E322002BFE7F /* PPCWallet.m in Sources */,
+				D70D11CC2042FC89002BFE7F /* PPCCurrencyManager.m in Sources */,
 				D7DF5517201BA58300701D55 /* PPCRootViewController.m in Sources */,
 				D7A364FC20248A2B00ED0E5F /* PPCRecoverWallet_1_ViewController.m in Sources */,
+				D7E6F6832041ABBA00BB3A4A /* PPCCurrency.m in Sources */,
+				D70D11B62042E30F002BFE7F /* PPCWalletManager.m in Sources */,
+				D70D11C22042E8FA002BFE7F /* PPCAmount.m in Sources */,
 				D7DF5588201F252C00701D55 /* PPCVirtualKeyboard.m in Sources */,
 				D7569D2F2021F4E700EFB7C7 /* PPCPaperKeyTableViewCell.m in Sources */,
+				D7E6F67C20419FBA00BB3A4A /* PPCDisplayCurrencyViewController.m in Sources */,
 				D7DF54C6201B59A200701D55 /* AppDelegate.m in Sources */,
 				D7DF550F201BA3BF00701D55 /* PPCViewController.m in Sources */,
 				D7DF551C201BA68500701D55 /* ILContainerView.m in Sources */,

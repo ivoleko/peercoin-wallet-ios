@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "PPCCurrency.h"
 
 @interface PPCUserSettings : NSObject
 
 @property (nonatomic) NSDateFormatterStyle dateFormatterStyle;
-
+@property (nonatomic, strong) PPCCurrency *currency;
 
 + (PPCUserSettings *) shared;
 - (void) clearAllSettings;

@@ -54,6 +54,7 @@
 "Title.Receive" = "Receive";
 "Title.Settings" = "Settings";
 "Title.DateFormat" = "Date Format";
+"Title.DisplayCurrency" = "Display Currency";
 
 
 //Settings

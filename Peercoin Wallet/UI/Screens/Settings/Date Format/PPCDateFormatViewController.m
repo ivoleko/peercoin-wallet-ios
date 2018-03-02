@@ -57,6 +57,7 @@
     if(cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellIdentifier];
         cell.textLabel.font = [cell.textLabel.font fontWithSize:16];
+        cell.tintColor = kPPCColor_green;
     }
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];

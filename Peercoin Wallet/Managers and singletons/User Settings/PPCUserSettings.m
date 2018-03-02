@@ -32,9 +32,17 @@
     [self saveSettings];
 }
 
+- (void) setCurrency:(PPCCurrency *)currency {
+    _currency = currency;
+    [self saveSettings];
+}
+
 - (void) saveSettings {
+    NSData *encodedCurrency = [NSKeyedArchiver archivedDataWithRootObject:self.currency];
+    
     NSDictionary *dic = @{
-                          @"dateStyle" : @((NSInteger)self.dateFormatterStyle)
+                          @"dateStyle" : @((NSInteger)self.dateFormatterStyle),
+                          @"currency" : encodedCurrency
                           };
     [[NSUserDefaults standardUserDefaults] setObject:dic forKey:settings];
     [[NSUserDefaults standardUserDefaults] synchronize];
@@ -45,7 +53,8 @@
     if (dic == nil) {
         
         //set defaults
-        self.dateFormatterStyle = NSDateFormatterMediumStyle;
+        _dateFormatterStyle = NSDateFormatterMediumStyle;
+        _currency = [PPCCurrency defaultCurrency];
         
         [self saveSettings];
         [self loadSettings];
@@ -53,6 +62,8 @@
     }
     
     self.dateFormatterStyle = (NSDateFormatterStyle)[dic[@"dateStyle"] integerValue];
+    self.currency = [NSKeyedUnarchiver unarchiveObjectWithData:dic[@"currency"]];
+
 }
 
 - (void) clearAllSettings {
